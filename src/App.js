@@ -1,7 +1,12 @@
-import './index.css'
+import HomePage from "./components/HomePage";
+import Navbar from "./components/Navbar";
+import "./index.css";
 
 export default function App() {
   return (
-   <div>Hello World</div>
-  )
+    <div>
+      <Navbar />
+      <HomePage />
+    </div>
+  );
 }
