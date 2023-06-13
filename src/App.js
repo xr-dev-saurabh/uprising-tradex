@@ -1,7 +1,16 @@
 import './index.css'
+import React from 'react';
+import Footer from './components/footer';
+import Card from './components/card';
+
 
 export default function App() {
   return (
-   <div>Hello World</div>
+    <div>
+      
+    <Card />
+    <Footer />
+   
+  </div>
   )
 }
