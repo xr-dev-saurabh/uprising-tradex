@@ -2,6 +2,7 @@ import './index.css'
 import React from 'react';
 import Footer from './components/footer';
 import Card from './components/card';
+import Contactus from './components/contactus';
 
 
 export default function App() {
@@ -9,8 +10,9 @@ export default function App() {
     <div>
       
     <Card />
+    <Contactus />
     <Footer />
-   
+  
   </div>
   )
 }
