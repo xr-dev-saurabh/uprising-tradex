@@ -40,15 +40,26 @@ const Home=()=>{
             </div>
             <div className="flex flex-col space-y-6 bg-white">
                <div className="flex flex-row space-x-6">
-                 <img className="w-1/2" src="https://assets.cdn.thewebconsole.com/S3WEB9735/images/img-ICT-services.png?m=9188ee21989a5fc2cbe441d2153bb669&geometry(1920%3E)" alt="" />
-                 <img className="w-1/2" src="https://assets.cdn.thewebconsole.com/S3WEB9735/images/img-ICT-services.png?m=9188ee21989a5fc2cbe441d2153bb669&geometry(1920%3E)" alt="" />
+                 <img className="w-1/2" src="https://isharp.net/wp-content/uploads/2017/02/ICT-Page.jpg" alt="" />
+                 <img className="w-1/2" src="https://isharp.net/wp-content/uploads/2017/02/ICT-Page.jpg" alt="" />
                </div>
                 <div className="flex flex-row space-x-6">
-                    <img className="w-1/3 h-2/3" src="https://assets.cdn.thewebconsole.com/S3WEB9735/images/img-ICT-services.png?m=9188ee21989a5fc2cbe441d2153bb669&geometry(1920%3E)" alt="" />
-                    <img className="w-2/3" src="https://assets.cdn.thewebconsole.com/S3WEB9735/images/img-ICT-services.png?m=9188ee21989a5fc2cbe441d2153bb669&geometry(1920%3E)" alt="" />
+                    <img className="w-1/3" src="https://isharp.net/wp-content/uploads/2017/02/ICT-Page.jpg" alt="" />
+                    <img className="w-2/3" src="https://isharp.net/wp-content/uploads/2017/02/ICT-Page.jpg" alt="" />
                 </div>
             </div>
         </div>
+        <div className="fixed right-24 flex flex-col space-y-10 p-10 ">
+                <div className="text-2xl font-bold">Fast moving consumer goods</div>
+                <div>
+                    <li>Augmennted Reality for websites(WebAR)</li>
+                    <li>Augmennted Reality filters for Instagram, Facebook and Snapchat</li>
+                    <li>Cloud Deployment Services for AWS, Microsoft, Google</li>
+                    <li>3D Product modeling</li>
+                    <li>Portfolio Designing</li>
+                    <li>NFC Tags</li>
+                </div>
+            </div>
     </div>)
 }
 
