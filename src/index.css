@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ul li {
+  @apply rounded py-[7px] px-[13px] hover:text-white hover:bg-[#18191f] transition-all duration-300;
+}
+
+#check:checked ~ ul {
+  @apply max-h-[100vh];
+}

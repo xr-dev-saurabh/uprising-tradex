@@ -8,6 +8,11 @@ module.exports = {
         roboto: ["Roboto"],
       },
     },
+    screens: {
+      sm: "640px",
+      // Add your custom screen size here
+      custom: { max: "640px" },
+    },
   },
   plugins: [],
 };
