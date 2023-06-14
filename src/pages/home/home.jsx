@@ -49,8 +49,9 @@ const Home=()=>{
                 </div>
             </div>
         </div>
+        
         <div className="fixed right-24 flex flex-col space-y-10 p-10 ">
-                <div className="text-2xl font-bold">Fast moving consumer goods</div>
+                <div className="text-2xl font-bold"> Fast moving consumer goods</div>
                 <div>
                     <li>Augmennted Reality for websites(WebAR)</li>
                     <li>Augmennted Reality filters for Instagram, Facebook and Snapchat</li>
