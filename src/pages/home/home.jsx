@@ -1,8 +1,10 @@
 import Navbar from "../../components/navbar/navbar"
-import IctCard from "../../components/navbar/ictcard"
-import FmcgCard from "../../components/navbar/fmcgCard"
+import IctCard from "../../components/cards/ictcard"
+import FmcgCard from "../../components/cards/fmcgCard"
+import Footer from "../../components/footer"
 const Home=()=>{
-    return(<div className="px-10 py-5 bg-gray-50">
+    return(<div>
+        <div className="px-10 py-5 bg-gray-50">
         <Navbar></Navbar>
         <div className="font-bold text-2xl w-40">Workspace that inspire</div>
         <div className="w-80">We work for people and make their dream come in to their life or in there home</div>
@@ -50,8 +52,8 @@ const Home=()=>{
             </div>
         </div>
         
-        <div className="fixed right-24 flex flex-col space-y-10 p-10 ">
-                <div className="text-2xl font-bold"> Fast moving consumer goods</div>
+        <div className="w-1/3">
+                <div className="flex flex-col space-y-10 p-10 text-2xl font-bold bg-white"> Fast moving consumer goods</div>
                 <div>
                     <li>Augmennted Reality for websites(WebAR)</li>
                     <li>Augmennted Reality filters for Instagram, Facebook and Snapchat</li>
@@ -61,6 +63,8 @@ const Home=()=>{
                     <li>NFC Tags</li>
                 </div>
             </div>
+    </div>
+    <Footer></Footer>
     </div>)
 }
 
