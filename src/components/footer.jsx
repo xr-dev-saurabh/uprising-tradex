@@ -43,9 +43,6 @@ const Footer = () => {
             <li className='py-2 text-sm'>Terms</li>
         </ul>
     </div>
-    
-   
-          
         </div>
       </div>
     
