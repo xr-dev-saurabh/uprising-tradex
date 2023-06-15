@@ -20,7 +20,7 @@ const Navbar = () => {
       >
         <i class="fa-solid fa-bars absolute top-0 right-0"></i>
       </label>
-      <ul className="ml-auto font-roboto sm:flex justify-center items-center left-[-100%] mt-5 sm:mt-0 text-[14px] sm:text-[18px] gap-x-8 text-center h-[100vh] max-h-0 sm:h-0 font-light leading-[21px]  custom:overflow-hidden transition-[max-height] duration-500 ease-in-out">
+      <ul className="ml-auto  font-roboto sm:flex justify-center items-center left-[-100%] mt-5 sm:mt-0 text-[14px] sm:text-[18px] gap-x-8 text-center h-[100vh] max-h-0 sm:h-0 font-light leading-[21px]  custom:overflow-hidden transition-[max-height] duration-500 ease-in-out">
         <li className="cursor-pointer">HOME</li>
         <li className="cursor-pointer">SERVICES</li>
         <li className="cursor-pointer">ABOUT</li>

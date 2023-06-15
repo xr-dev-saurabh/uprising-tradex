@@ -7,5 +7,5 @@ ul li {
 }
 
 #check:checked ~ ul {
-  @apply max-h-[100vh];
+  @apply max-h-[300px];
 }

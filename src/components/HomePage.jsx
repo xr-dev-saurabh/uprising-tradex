@@ -3,7 +3,7 @@ import play from "../assets/images/play-circle.png";
 
 const HomePage = () => {
   return (
-    <div className="relative   flex items-center  font-inter">
+    <div className="relative  h-[100%]  flex items-center  font-inter">
       <div className="w-[337.76px] sm:w-[400px]  sm:h-[256px] h-[224.05px]  ml-7 sm:ml-24">
         <h3 className="sm:text-[53px] text-[45px] w-full h-[123px] sm:h-[146px]  font-extrabold">
           Workspace that inspire
