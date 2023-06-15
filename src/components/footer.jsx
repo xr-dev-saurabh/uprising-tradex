@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='max-w-[1240px] bg-slate-800 mx-auto py-16 px-4 grid lg:grid-cols-4 gap-6 text-gray-300'>
+    <div className='max-w-[fullpx] bg-slate-800 mx-auto py-16 px-4 grid lg:grid-cols-4 gap-6 text-gray-300'>
       <div>
         <h1 className='w-full text-3xl font-bold text-white'>UP RISING</h1>
       </div>
