@@ -1,5 +1,5 @@
 const fmcgCard=()=>{
-    return (<div className="flex flex-col space-y-10 w-1/4 bg-white-200 px-6 py-10 bg-white">
+    return (<div className="flex flex-col space-y-10 w-1/4 bg-white-200 px-6 py-10 bg-white shadow-lg">
     <div className="text-2xl">FMCG</div>
     <div className="">Fast moving consumer goods(FMCG): Uprising provides the best fast moving consumer goods around globe with competitive pricing. We export different types of packaged foods, beverages , candles, clothings, etc</div>
     <div className="text-right">

@@ -3,7 +3,7 @@ import uprisingLogo from "../../assets/logo.png"
 const Navbar = () => {
   return (
     <div className="w-full">
-      <div className="flex flex-row justify-around">
+      <div className="flex flex-row justify-between">
         <Link to="/" style={{color:"inherit",textDecoration:"none"}} className="flex flex-row justify-center items-center">
           <div>
             <img src={uprisingLogo} alt=""/>
