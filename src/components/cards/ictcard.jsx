@@ -1,6 +1,6 @@
 const ictCard=()=>{
-    return (<div className="flex flex-col space-y-10 w-1/4 px-6 py-10 bg-white shadow-lg">
-        <div className="text-2xl">ICT</div>
+    return (<div className="flex flex-col space-y-5 md:space-y-10 w-full md:w-1/4 px-3 md:px-6 py-5 md:py-10 bg-white shadow-lg">
+        <div className="text-xl md:text-2xl">ICT</div>
         <div className="">ICT Providing innovative thinking, design thinking, and the right guidance for IT transformation. Uprising delivers cutting edge ICT solutions to clients</div>
         <div className="text-right">
             <button className="border-2 p-1 text-2xl">Read-More</button>

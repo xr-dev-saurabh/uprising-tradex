@@ -1,9 +1,9 @@
 const AboutUs=()=>{
     return (
         <>
-                        <div className="flex flex-col items-center px-10 py-10">
-                <div className="text-2xl font-semibold py-5">WHy Us?</div>
-                <div className="grid grid-cols-4 gap-6 space-x-6">
+        <div className="flex flex-col md:px-16 px-6 py-5">
+                <div className="text-2xl font-semibold py-5 text-center">WHy Us?</div>
+                <div className="grid grid-rows-4 md:grid-cols-4 gap-6 space-x-6">
                     {/* Reliable Card */}
                     <div className="flex flex-col px-6 py-4 bg-white shadow-2xl relative">
                         <div className="text-xl font-semibold pb-5">Reliable</div>
@@ -28,7 +28,7 @@ const AboutUs=()=>{
                         <div className=" font-serif">We believe in building and maintaining long term relationships  with all our clients</div>
                     </div>
                 </div>
-            </div>
+        </div>
         </>
     )
 }
