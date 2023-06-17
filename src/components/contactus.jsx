@@ -1,7 +1,7 @@
 const ContactUS=()=>{
     return (
         <>
-            <div className="flex flex-col md:flex-row w-full md:px-16 px-6 py-5">
+            <div className="flex h-auto md:h-40 flex-col md:flex-row w-full md:px-16 px-6 py-5">
                 <div className="flex flex-col space-y-5 md:space-y-10 w-full md:w-1/2">
                     <div className="pl-16">Contact Us</div>
                     <div className="flex flex-row space-x-2 md:space-x-10">

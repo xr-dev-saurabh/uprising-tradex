@@ -7,7 +7,7 @@ import ContactUS from "../../components/contactus"
 import Mission from "../../components/mission"
 const Home=()=>{
     return(
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 flex flex-col h-fit overflow-hidden">
         <div className="md:px-16 px-6 py-5">
         <Navbar></Navbar>
         <div className="">
