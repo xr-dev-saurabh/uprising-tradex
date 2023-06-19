@@ -1,12 +1,13 @@
-import HomePage from "./components/HomePage";
-import Navbar from "./components/Navbar";
-import "./index.css";
+import Home from "./Components/Home";
+import Navbar from "./Components/Navbar";
 
-export default function App() {
+function App() {
   return (
-    <div>
+    <div className="App">
       <Navbar />
-      <HomePage />
+      <Home />
     </div>
   );
 }
+
+export default App;
