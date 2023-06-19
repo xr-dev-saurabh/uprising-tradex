@@ -1,3 +1,4 @@
+import Button from '@mui/material/Button';
 const ContactUS=()=>{
     return (
         <>
@@ -19,7 +20,7 @@ const ContactUS=()=>{
                 <div className="flex flex-col space-y-2 w-full md:w-1/2">
                     <div className=""><input className="w-full bg-gray-200 px-10 py-3" type="text" placeholder="Enter your email id"/></div>
                     <div className=""><input className="w-full bg-gray-200 px-10 py-3" type="text"/></div>
-                    <div className="text-right"><button className="bg-gray-500 px-2 py-1" type="submit">SUBMIT</button></div>
+                    <div className="text-right"><Button className="bg-gray-500 px-2 py-1" type="submit" variant="contained">SUBMIT</Button></div>
                 </div>
             </div>
         </>

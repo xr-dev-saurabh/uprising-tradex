@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom"
+import Link from '@mui/material/Link';
 import uprisingLogo from "../../assets/logo.png"
 import { useState } from "react"
 import Menu from "./menu"
