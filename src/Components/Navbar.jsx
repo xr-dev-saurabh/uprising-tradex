@@ -1,142 +1,51 @@
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import MenuIcon from "@mui/icons-material/Menu";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import logo from "../Components/assets/images/logo.png";
-import {
-  Box,
-  IconButton,
-  List,
-  ListItemButton,
-  ListItemText,
-  ThemeProvider,
-  createTheme,
-  useMediaQuery,
-} from "@mui/material";
-import { useState } from "react";
+import React from "react";
+import logo from "../assets/Uprising logo.jpg";
+import { MdMiscellaneousServices } from "react-icons/md";
+import { IoMdHome } from "react-icons/io";
+import { RiTeamFill } from "react-icons/ri";
+import { MdPermContactCalendar } from "react-icons/md";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(true);
-  const theme = createTheme({
-    palette: {
-      primary: {
-        main: "#ffffff",
-      },
-    },
-  });
-  const isSmallScreen = useMediaQuery(theme.breakpoints.up("sm"));
-
-  //   font-family: Roboto;
-  // font-size: 16px;
-  // font-weight: 400;
-  // line-height: 18px;
-  // letter-spacing: 0em;
-  // text-align: left;
-
-  const handleToggle = () => {
-    setOpen(!open);
-  };
-
   return (
-    <div>
-      <ThemeProvider theme={theme}>
-        <AppBar position="static" color="primary" elevation={0}>
-          <Container
-            maxWidth="xl"
-            sx={{
-              display: "flex",
-              alignItems: "start",
-              fontFamily: "Roboto",
-              // flexWrap: "wrap",
-              // flexDirection: isSmallScreen ? "row" : "column",
-            }}
-          >
-            <Box
-              sx={{
-                display: "flex",
-                flexWrap: "wrap",
-                flexGrow: 1,
-                flexDirection: isSmallScreen ? "row" : "column",
-              }}
-            >
-              <Toolbar disableGutters sx={{ flexGrow: 1 }}>
-                <img
-                  src={logo}
-                  alt="logo"
-                  sx={{
-                    width: isSmallScreen ? "67px" : "44px",
-                    height: isSmallScreen ? "48px" : "32px",
-                  }}
-                />
-                <Typography
-                  variant="h1"
-                  component="h5"
-                  sx={{
-                    fontSize: isSmallScreen ? "24px" : "17px",
-                  }}
-                >
-                  UPRISING
-                </Typography>
-              </Toolbar>
+    <nav className=" p-4 flex justify-between items-center">
+      {/* Logo Section */}
+      
+      <div className="p-2">
+        <img src={logo} alt="Logo" className="h-14 mr-2" />
+      </div>
 
-              <List
-                sx={{
-                  zIndex: 2,
-                  display: isSmallScreen ? "flex" : "block",
-                  maxHeight: open && !isSmallScreen ? "0px" : "400px",
-                  overflow: open && !isSmallScreen ? "hidden" : null,
+      {/* Menu Section */}
+      <div className="flex items-center space-x-10 backdrop-blur-md bg-gray-300/30 rounded-2xl px-4 ">
+      <ul className="flex   space-x-10 px-s ">
+        <NavItem link="/" icon={<IoMdHome />} text="Home" className="flex flex-col" />
+        <NavItem link="/" icon={<RiTeamFill />} text="About" />
+        <NavItem link="/" icon={<MdMiscellaneousServices />} text="Services" />
+        <NavItem link="/" icon={<MdPermContactCalendar />} text="Contact" />
+      </ul>
 
-                  // overflow: isSmallScreen ? "none" : "hidden",
+      </div>
 
-                  transition: "max-height 0.3s ease-in-out",
-                }}
-              >
-                <ListItemButton>
-                  <ListItemText
-                    primary="HOME"
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  />
-                </ListItemButton>
-                <ListItemButton>
-                  <ListItemText
-                    primary="SERVICES"
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  />
-                </ListItemButton>
-                <ListItemButton>
-                  <ListItemText
-                    primary="ABOUT"
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  />
-                </ListItemButton>
-              </List>
-            </Box>
-            <Toolbar>
-              <IconButton
-                color="inherit"
-                onClick={handleToggle}
-                sx={{ display: isSmallScreen ? "none" : "block" }}
-              >
-                <MenuIcon />
-              </IconButton>
-            </Toolbar>
-          </Container>
-        </AppBar>
-      </ThemeProvider>
+      {/* Order Button */}
+      <div className="flex items-center space-x-4">
+        <button className="order-btn bg-sky-500 hover:bg-sky-300 text-white font-bold py-2 px-10 rounded cursor-pointer transition duration-300">
+          Order
+        </button>
+      </div>
+    </nav>
+  );
+};
+
+const NavItem = ({ icon, text }) => {
+  return (
+    <div className="flex items-center text-black mr-1">
+      {icon && (
+        <span className="mr-1 hover:text-sky-500">{icon}</span>
+      )}
+      <span className="px-1 py-2 font-semibold font-sans hover:underline-offset-4 hover:text-sky-500 cursor-pointer transition duration-300">{text}</span>
     </div>
   );
 };
+
+
+
 export default Navbar;

@@ -1,121 +1,70 @@
-import * as React from "react";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
-import Grid from "@mui/material/Grid";
-import { Facebook, Instagram, Twitter } from "@mui/icons-material";
-import { Box } from "@mui/material";
+import React from "react";
+import { MdWifiCalling2, MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
 
-export default function Footer() {
+
+const Footer = () => {
   return (
-    <Box
-      component="footer"
-      sx={{
-        backgroundColor: "#252B42",
-        p: 6,
-      }}
-    >
-      <Container maxWidth="full" >
-      <Typography variant="h4" align="left" fontWeight="bold" color="white">
-          UP RISING
-        </Typography>
-        <Grid container justifyContent="space-between" py={0} px={40} mt={12}  spacing={2}>
-          
-        <Grid>
-            <Typography variant="h6" color="white" gutterBottom>
-            Solutions
-            </Typography>
-            <Typography variant="body2" color="white">
-            Analytics
-            </Typography>
-            <Typography variant="body2" color="white">
-            Marketing
-            </Typography>
-            <Typography variant="body2" color="white">
-            Commerce
-            </Typography>
-            <Typography variant="body2" color="white">
-            Insights
-            </Typography>
-          </Grid>
-          <Grid >
-            <Typography variant="h6" color="white" gutterBottom>
-            Company
-            </Typography>
-            <Typography variant="body2" color="white">
-            About Us
-            </Typography>
-            <Typography variant="body2" color="white">
-            Carrier
-            </Typography>
-            <Typography variant="body2" color="white">
-            We are hiring
-            </Typography>
-            <Typography variant="body2" color="white">
-            Blog
-            </Typography>
-          </Grid>
-          <Grid >
-            <Typography variant="h6" color="white" gutterBottom>
-            Support
-            </Typography>
-            <Typography variant="body2" color="white">
-            Pricing
-            </Typography>
-            <Typography variant="body2" color="white">
-            Documentation
-            </Typography>
-            <Typography variant="body2" color="white">
-            Guides
-            </Typography>
-            <Typography variant="body2" color="white">
-            API Status
-            </Typography>
-          </Grid>
-          <Grid >
-            <Typography variant="h6" color="white" gutterBottom>
-            Legal
-            </Typography>
-            <Typography variant="body2" color="white">
-            Claim
-            </Typography>
-            <Typography variant="body2" color="white">
-            Policy
-            </Typography>
-            <Typography variant="body2" color="white">
-            Terms
-            </Typography>
-          </Grid>
-          <Grid>
-            <Typography variant="h6" color="white" gutterBottom>
-              Follow Us
-            </Typography>
-            <Link href="https://www.facebook.com/" color="inherit">
-              <Facebook />
-            </Link>
-            <Link
-              href="https://www.instagram.com/"
-              color="inherit"
-              sx={{ pl: 1, pr: 1 }}
-            >
-              <Instagram />
-            </Link>
-            <Link href="https://www.twitter.com/" color="inherit">
-              <Twitter />
-            </Link>
-          </Grid>
-        </Grid>
-        <Box mt={5}>
-          <Typography variant="body2" color="white" align="center">
-            {"Copyright © "}
-            <Link color="inherit" href="https://your-website.com/">
-              Your Website
-            </Link>{" "}
-            {new Date().getFullYear()}
-            {"."}
-          </Typography>
-        </Box>
-      </Container>
-    </Box>
+    <div className="px-20 pt-10  w-full h-full bg-gray-800  text-white">
+      {/* Upper Section */}
+      <div className="flex justify-between items-center">
+        <div>
+          <h1 className="text-3xl font-bold">Uprising</h1>
+        </div>
+        <div className="flex items-center">
+          <span className="mr-2">
+            <MdWifiCalling2 />
+          </span>
+          <span className="mr-4">8140xxxx84</span>
+          <span className="mr-2">
+            <MdEmail />
+          </span>
+          <span className="mr-4">ashish@gmail.com</span>
+          <span>
+            <FaLocationDot />
+          </span>
+          <span>axyz location</span>
+        </div>
+      </div>
+
+      {/* Middle Section */}
+      <div className="my-6 flex  justify-between text-justify ">
+        <div>
+          <h1 className="text-5xl font-semibold">Let's take your</h1>
+          <h1 className=" text-4xl font-semibold text-red-600">
+            {" "}
+            business to the next level
+          </h1>
+        </div>
+        <div className="mt-4   flex flex-col w-96 ">
+          <input
+            type="text" required
+            placeholder="Name"
+            className="  w-96  mr-4 m-2 rounded bg-gray-800 text-white border-b-2 border-sky-300  outline-offset-2 focus:outline-none"
+          />
+          <input
+            type="email" required
+            placeholder="Email"
+            className="  w-96 mr-4 m-2 rounded bg-gray-800 text-white border-b-2 border-sky-300  outline-offset-2 focus:outline-none"
+          />
+          <input
+            type="text" required
+            placeholder="How can I help you?"
+            className="  w-96  mr-4 m-2 rounded bg-gray-800 text-white border-b-2 border-sky-300  outline-offset-2 focus:outline-none"
+          />
+          <button className="bg-blue-500 w-68 text-white px-4 py-2 rounded hover:bg-blue-600">
+            Submit
+          </button>
+        </div>
+      </div>
+
+      {/* Lower Section */}
+      <div className="footer_bottom text-center pb-4">             
+              <h3 className='text-center '>© Uprising Tradex LLP. 2015 All rights reserved.</h3>
+                       
+        </div>
+    </div>
   );
-}
+};
+
+export default Footer;
