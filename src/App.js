@@ -10,7 +10,7 @@ import ProductsRow from "./components/product/ProductsRow";
 
 export default function App() {
   return (
-   <>
+   <div className="bg-white">
     <Hero />
     <BigCard />
     <Servies />
@@ -19,6 +19,6 @@ export default function App() {
     <ThirdSection /> */}
     {/* <ProductHero />
     <ProductsRow /> */}
-   </>
+   </div>
   )
 }
