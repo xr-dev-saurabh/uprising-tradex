@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Img1 from '../assets/svg/Rectangle 33.svg';
 import Img21 from '../assets/Image 1.jpg';
 import Img22 from '../assets/Image 2.png';
@@ -7,57 +7,44 @@ import Img24 from '../assets/Image 4.png';
 
 export default function BigCard() {
     return (
-        <>
-            <div className='flex items-center justify-center gap-60 max-w-[1280px] mx-auto mt-20 z-10'>
-                <div>
-                    <img src={Img1} alt="" className='w-[500px]' />
-                </div>
-                <div className='mr-10 h-[400px] w-[300px] p-4 '>
-                    <h1 className='text-4xl font-bold mb-8'>ICT Services</h1>
+        <div className=''>
+            {/* First Section */}
+            <div className='flex flex-col lg:flex-row lg:justify-around items-center justify-center max-w-[1280px] mx-auto mt-20 z-10'>
+                <img src={Img1} alt="" className='w-full max-w-[500px]' />
+                <div className='w-full max-w-[600px] p-4'>
+                    <h1 className='text-4xl font-bold mb-8 text-center'>ICT Services</h1>
                     <ul className='list-disc ml-8 text-lg text-gray-600'>
-                        <li>Augmented Realty for websites(WebAR)</li>
-                        <li>Augmented Reality filters for Instagram, Facebook and Snapchat</li>
-                        <li>Cloud Deployment Services for AWS, Microsoft, Google.</li>
-                        <li>3D Product modelling</li>
-                        <li>Portfolio Designing</li>
-                        <li>NFC Tags.</li>
+                        <li><b>Web Development Services:</b> Designing and developing websites that are visually appealing, user-friendly, and optimized for performance across devices.</li>
+                        <li><b>Cloud Deployment & Automation Services:</b> Implementing and managing cloud solutions on AWS, Azure, and GCP, including automation of deployment processes for increased efficiency and scalability.</li>
+                        <li><b>3D Modeling:</b> Creating detailed and realistic 3D models for various applications, including product visualization, architectural design, and animation.</li>
+                        <li><b>AR Filters for Social Media:</b> Developing custom Augmented Reality (AR) filters for social media platforms, allowing brands to engage with their audience in a fun and interactive way.</li>
                     </ul>
                 </div>
             </div>
 
-            <div className='flex items-center justify-center gap-60 max-w-[1280px] mx-auto mt-20 mb-10'>
-                <div className='mr-10 h-[400px] w-[400px] p-4'>
-                    <h1 className='text-4xl font-bold mb-8'>Our Advantages</h1>
-                    <ul className='list-decimal ml-8 text-lg text-gray-600'>
-                        <li>Knowledge and Experience in Diverse Sectors
-                            <ul className='list-disc ml-5'>
-                                <li>One of the most useful skills to have is being able to understand and identify.</li>
-                            </ul>
-                        </li>
-                        <li>Innovative Problem Solving
-                            <ul className='list-disc ml-5'>
-                                <li>Increase innovation and improve problem-solving at work by fostering creative abilities.</li>
-                            </ul>
-                        </li>
-                        <li>Relationship Driven
-                            <ul className='list-disc ml-5'>
-                                <li>Provides automatic targets profiling capabilities.</li>
-                            </ul>
-                        </li>
+            {/* Second Section */}
+            <div className='flex flex-col-reverse lg:flex-row lg:justify-around items-center justify-center max-w-[1280px] mx-auto mt-20 mb-10 z-10'>
+                <div className='w-full max-w-[600px] p-4'>
+                    <h1 className='text-4xl font-bold mb-8 text-center'>Our Advantages</h1>
+                    <ul className='list-disc ml-8 text-lg text-gray-600'>
+                        <li><b>Cross-Industry Expertise:</b> Our team's extensive experience spans various sectors, allowing us to understand diverse business needs and deliver tailored solutions.</li>
+                        <li><b>Client-Centric Approach:</b> With a focus on building strong relationships, we go beyond providing solutions by offering personalized services and support, ensuring client satisfaction and success.</li>
+                        <li><b>Efficiency and Automation:</b> Our solutions include automatic target profiling capabilities, streamlining processes and enhancing efficiency in target identification and engagement.</li>
+                        <li><b>Quality Assurance:</b> We prioritize quality in all our services, ensuring that our solutions meet the highest standards and exceed client expectations.</li>
+                        <li><b>Agile Methodology:</b> We follow agile principles and practices, allowing us to adapt quickly to changing requirements and deliver solutions that are responsive to our clients' evolving needs.</li>
                     </ul>
                 </div>
-                <div className='bg-white shadow-2xl'>
+                <div className='bg-white shadow-2xl max-w-[600px] flex flex-col items-center justify-center md:justify-between'>
                     <div className='flex gap-4 mb-4 items-end'>
-                        <img src={Img21} alt="" />
-                        <img src={Img22} alt="" className='' />
+                        <img src={Img21} alt="" className='w-1/2 md:w-auto' />
+                        <img src={Img22} alt="" className='w-1/2 md:w-auto' />
                     </div>
                     <div className='flex gap-4 items-start'>
-                        <img src={Img23} alt="" className='' />
-                        <img src={Img24} alt="" />
+                        <img src={Img23} alt="" className='w-1/2 md:w-auto' />
+                        <img src={Img24} alt="" className='w-1/2 md:w-auto' />
                     </div>
                 </div>
             </div>
-
-        </>
-    )
+        </div>
+    );
 }
