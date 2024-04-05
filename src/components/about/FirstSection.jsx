@@ -5,7 +5,7 @@ export default function FirstSection() {
     return (
         <>
 
-            <div className='p-24 flex w-full'>
+            <div className='p-24 flex w-full bg-[#fbf9f9]'>
                 <div className='w-[20%] flex items-center text-lg font-semibold'>
                     <h3 className='w-20'>About-us our team</h3>
                 </div>

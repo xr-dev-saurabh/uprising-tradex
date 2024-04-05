@@ -1,5 +1,6 @@
 import BigCard from "./components/BigCard";
 import Hero from "./components/Hero";
+import Misson from "./components/Misson";
 import Servies from "./components/Servies";
 import FirstSection from "./components/about/FirstSection";
 import SecondSection from "./components/about/SecondSection";
@@ -14,6 +15,7 @@ export default function App() {
     <Hero />
     <BigCard />
     <Servies />
+    <Misson />
     {/* <FirstSection />
     <SecondSection />
     <ThirdSection /> */}

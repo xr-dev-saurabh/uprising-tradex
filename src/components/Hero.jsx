@@ -1,15 +1,19 @@
 import React from 'react';
-import HeroImg from '../assets/noBg-Rectangle-22-croped.png';
+// import HeroImg from '../assets/noBg-Rectangle-22-croped.png';
 import { FaArrowRight } from 'react-icons/fa6';
+// import Particle from './Particle';
 
 export default function Hero() {
+
+
     return (
-        <div className="flex items-center bg-white h-screen bg-cover" 
-            style={{ 
-                backgroundImage: `url(${HeroImg})`, 
-                backgroundPosition: 'center',
-            }}
+        <div className="flex items-center bg-white h-screen bg-cover"
+        // style={{ 
+        //     backgroundImage: `url(${HeroImg})`, 
+        //     backgroundPosition: 'center',
+        // }}
         >
+            {/* <Particle /> */}
             <div className="  px-4 sm:px-6 lg:px-8 w-[600px] ml-10">
                 <h1 className="font-bold tracking-wide text-gray-800 text-4xl md:text-6xl">
                     Workplace that inspires
@@ -22,7 +26,7 @@ export default function Hero() {
                 </div>
 
                 <button className='group border border-black px-3 py-2 mt-5 active:border-2 font-semibold tracking-wider mx-auto'>
-                    Discover 
+                    Discover
                     <FaArrowRight className="hidden ml-2 group-hover:inline-block " />
                 </button>
             </div>

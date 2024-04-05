@@ -3,7 +3,7 @@ import Fancy2 from '../../assets/Rectangle 47.png';
 
 export default function SecondSection() {
     return (
-        <div className='flex p-24 gap-32'>
+        <div className='flex p-24 gap-32 bg-[#fbf9f9]'>
 
             <p className='text-lg text-justify'>
             Reealtech, a division of Uprising established in 2022, stands as a beacon of innovation in the realm of Extended Reality (XR) and IT solutions. Spearheaded by Saurabh Upadhyay, Reealtech has garnered recognition for its excellence, including being selected as one of the top 40 startups in a prestigious Google networking event, chosen from over 14,000 startups in India. This achievement is a testament to our commitment to pushing the boundaries of technology and delivering cutting-edge solutions.
