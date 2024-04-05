@@ -3,7 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background: #fbf9f9;
+}
 
 .footer_bottom h3 {
     font-family: 'Open Sans',sans-serif;
 }
+
