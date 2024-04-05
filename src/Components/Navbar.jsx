@@ -1,51 +1,123 @@
-import React from "react";
-import logo from "../assets/Uprising logo.jpg";
-import { MdMiscellaneousServices } from "react-icons/md";
+import React, { useState } from "react";
+import Image from "../assets/logo.png";
+import { HiOutlineMenu } from "react-icons/hi";
+import { AiOutlineClose } from "react-icons/ai";
+import { FaShoppingCart } from "react-icons/fa";
 import { IoMdHome } from "react-icons/io";
 import { RiTeamFill } from "react-icons/ri";
-import { MdPermContactCalendar } from "react-icons/md";
+import { MdMiscellaneousServices, MdPermContactCalendar } from "react-icons/md";
+import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io5";
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const [logo, setLogo] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav);
+    setLogo(!logo);
+  };
+
   return (
-    <nav className=" p-4 flex justify-between items-center">
-      {/* Logo Section */}
-      
-      <div className="p-2">
-        <img src={logo} alt="Logo" className="h-14 mr-2" />
+    <div className="flex justify-between items-center left-0 w-screen h-20 px-4 relative">
+      {/* Logo */}
+      <div
+        className={`flex items-start ${
+          logo ? "hidden" : "block"
+        } bg-[#110537] md:block`}
+        onClick={handleNav}
+      >
+        <img src={Image} alt="logo" className="h-[45px] w-[100px] relative" />
       </div>
 
-      {/* Menu Section */}
-      <div className="flex items-center space-x-10 backdrop-blur-md bg-gray-300/30 rounded-2xl px-4 ">
-      <ul className="flex   space-x-10 px-s ">
-        <NavItem link="/" icon={<IoMdHome />} text="Home" className="flex flex-col" />
-        <NavItem link="/" icon={<RiTeamFill />} text="About" />
-        <NavItem link="/" icon={<MdMiscellaneousServices />} text="Services" />
-        <NavItem link="/" icon={<MdPermContactCalendar />} text="Contact" />
+      {/* Menu for medium and large screens */}
+      <ul className="hidden bg-[#110537] rounded-2xl px-4 text-white py-2 space-x-10 md:flex cursor-pointer">
+        <li className="flex items-center hover:text-gray-500">
+          <IoMdHome size={20} />
+          <span>Home</span>
+        </li>
+        <li className="flex items-center hover:text-gray-500">
+          <RiTeamFill size={20} />
+          <span>About Us</span>
+        </li>
+        <li className="flex items-center hover:text-gray-500">
+          <MdMiscellaneousServices size={20} />
+          <span>Services</span>
+        </li>
+        <li className="flex items-center hover:text-gray-500">
+          <MdPermContactCalendar size={20} />
+          <span>Contact</span>
+        </li>
       </ul>
 
-      </div>
-
-      {/* Order Button */}
-      <div className="flex items-center space-x-4">
-        <button className="order-btn bg-sky-500 hover:bg-sky-300 text-white font-bold py-2 px-10 rounded cursor-pointer transition duration-300">
-          Order
+      {/* Search and User Icons */}
+      <div className="px-4 hidden text-white sm:flex">
+        <button className="order-btn flex items-center gap-2 bg-[#110537] hover:bg-[#a5a5a5] text-white font-bold py-2 px-10 rounded cursor-pointer transition duration-300">
+          <FaShoppingCart size={20} style={{ color: "white" }} /> Order
         </button>
       </div>
-    </nav>
-  );
-};
 
-const NavItem = ({ icon, text }) => {
-  return (
-    <div className="flex items-center text-black mr-1">
-      {icon && (
-        <span className="mr-1 hover:text-sky-500">{icon}</span>
-      )}
-      <span className="px-1 py-2 font-semibold font-sans hover:underline-offset-4 hover:text-sky-500 cursor-pointer transition duration-300">{text}</span>
+      {/* Menu Icon for small screens */}
+      <div onClick={handleNav} className="md:hidden z-10">
+        {nav ? (
+          <AiOutlineClose className="text-black" size={20} />
+        ) : (
+          <HiOutlineMenu size={20} />
+        )}
+      </div>
+
+      {/* Responsive Navigation Menu */}
+      <div
+        onClick={handleNav}
+        className={`relative top-0 w-full md:w-auto md:relative bg-gray-100/90 md:bg-transparent px-4 py-7
+         md:flex md:flex-row md:items-center md:space-x-4 ${
+          nav ? "left-0" : "-left-full"
+        } ${nav ? "block" : "hidden"} md:hidden z-40`}
+      >
+        <ul className="mt-10">
+          <li className={`flex items-start mt-5 w-[100px] bg-[#110537] md:block`} onClick={handleNav}>
+            <img src={Image} alt="logo" className="h-[45px] w-[100px]" />
+          </li>
+          <li className="border-b border-black mt-6 text-black font-bold flex items-center hover:text-gray-500">
+            <IoMdHome size={20} className="mr-2" />
+            <span>Home</span>
+          </li>
+          <li className="border-b border-black mt-5 text-black font-bold flex items-center hover:text-gray-500">
+            <RiTeamFill size={20} className="mr-2" />
+            <span>About Us</span>
+          </li>
+          <li className="border-b border-black mt-5 text-black font-bold flex items-center hover:text-gray-500">
+            <MdMiscellaneousServices size={20} className="mr-2" />
+            <span>Services</span>
+          </li>
+          <li className="border-b border-black mt-5 text-black font-bold flex items-center hover:text-gray-500">
+            <MdPermContactCalendar size={20} className="mr-2" />
+            <span>Contact</span>
+          </li>
+
+          <div className="flex flex-col">
+            <button className="order-btn flex justify-center items-center gap-2 mt-7 bg-[#110537] hover:bg-[#a5a5a5] text-white font-bold py-2 px-10 rounded cursor-pointer transition duration-300">
+              <FaShoppingCart size={20} style={{ color: "white" }} /> Order
+            </button>
+          </div>
+          <div className="flex justify-between my-6">
+            <button className="icon hover:text-gray-500">
+              <FaFacebook />
+            </button>
+            <button className="icon hover:text-gray-500">
+              <FaTwitter />
+            </button>
+            <button className="icon hover:text-gray-500">
+              <IoLogoInstagram />
+            </button>
+            <button className="icon hover:text-gray-500">
+              <FaYoutube />
+            </button>
+          </div>
+        </ul>
+      </div>
     </div>
   );
 };
-
-
 
 export default Navbar;
