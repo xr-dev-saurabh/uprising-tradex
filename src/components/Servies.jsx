@@ -6,8 +6,8 @@ export default function Services() {
         <div className="w-[80%] mx-auto h-[500px] px-40 my-40" style={{
            backgroundImage: `url(${CoverImg})`,
             // backgroundPosition: 'center',
-            // backgroundSize: 'contain', // Adjust according to your design
-            // backgroundRepeat: 'no-repeat', // Adjust according to your design
+            backgroundSize: 'contain', // Adjust according to your design
+            backgroundRepeat: 'no-repeat', // Adjust according to your design
         }}>
             {/* Right Section */}
             <div className="p-12 px-16 top-10 relative bg-white w-[70%] shadow-[-5px_-5px_25px_1px_#ffffff,5px_5px_25px_1px_#33333350] drop-shadow-2xl ml-[350px] ">
