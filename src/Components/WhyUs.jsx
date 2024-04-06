@@ -1,89 +1,75 @@
 import React from "react";
-import reliableIcon from "../assets/reliable.svg";
-import solutionsIcon from "../assets/solutions.svg";
-import affordableIcon from "../assets/affordable.svg";
-import experienceIcon from "../assets/experience.svg";
+import './whyus.css'
 
-const WhyUs = () => {
+
+// Define a React component called CardList
+const CardList = () => {
+  // Array containing information about each card
+  const cards = [
+    {
+      accentColor: "#D00903",
+      iconClass:" fa-solid fa-pen-nib",
+      title: "Industry Expertise",
+      content:
+      "With years of experience in the ICT and FMCG sectors, we have a deep understanding of the industry's nuances, enabling us to provide tailored solutions that meet your specific needs.",
+    },
+    {
+      accentColor: "#EC9E38",
+      iconClass: "fa-regular fa-lightbulb",
+      title: "Innovative Solutions",
+      content:
+        "We are committed to innovation, constantly exploring new technologies and approaches to deliver cutting-edge solutions that drive business growth and success.",
+    },
+    {
+      accentColor: "#64BECF",
+      iconClass: "fa-regular fa-bow-arrow",
+      title: "Customer-Centric Approach",
+      content:
+        " Our customer-centric approach ensures that your needs are our top priority. We work closely with you to understand your requirements and deliver solutions that exceed your expectations.",
+    },
+    {
+      accentColor: "#359c09",
+      iconClass: "fa-solid fa-user-group",
+      title: "Collaborative Partnership",
+      content:
+        "  We see ourselves as your partners in success, working together with you to achieve your business goals and objectives.",
+    },
+    {
+      accentColor: "#933cc2",
+      iconClass: "fa-solid fa-headset",
+      title: "Continuous Support",
+      content:
+        "Our dedicated support team is available around the clock to assist you with any queries or issues, ensuring that you receive the assistance you need, when you need it.",
+    },
+    
+   
+  ];
+
+  // Return the JSX to render the list of cards
   return (
-    <section className="bg-gray-100 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Why Us?
-          </h2>
-        </div>
-        <div className="mt-10">
-          <div className="flex flex-col md:flex-row justify-center md:justify-between items-center md:space-x-8">
-            {/* Reliable */}
-            <div className="bg-gray-100 p-4 rounded-md md:w-[225px] h-[300px] text-justify px-5 shadow-2xl drop-shadow-2xl ">
-              <h3 className="text-lg font-semibold mb-2">Reliable</h3>
-              <div className="text-justify">
-                <p>
-                  We believe in building and maintaining long-term relationships
-                  with all our clients.
-                </p>
-                {/* SVG Image for Reliable */}
-                <img
-                  src={reliableIcon}
-                  alt="Reliable Icon"
-                  className="w-40 h-40 ml-20"
-                />
-              </div>
+    <div>
+      <h1 className="text-3xl font-bold mb-6 text-center text-[#130d27]">Your Partner in Excellence</h1>
+      <ul className="flex flex-wrap justify-center justUL ">
+        {cards.map((card, index) => (
+          <li
+            key={index}
+            className="card m-4 p-6 rounded-lg shadow-lg relative"
+            style={{ "--accent-color": card.accentColor }} // Apply custom accent color to each card
+          >
+            <div className="icon absolute top-0 left-0">
+              {/* Render the icon for each card */}
+              <i className={`far ${card.iconClass} `}></i>
             </div>
-            {/* Solutions */}
-            <div className="bg-gray-100 p-4 rounded-md md:w-[225px] h-[300px] text-justify px-5 shadow-2xl drop-shadow-2xl">
-              <h3 className="text-lg font-semibold mb-2">Solutions</h3>
-              <div className="text-justify">
-                <p>
-                  We strive to provide optimal solutions to ensure your utmost
-                  satisfaction.
-                </p>
-                {/* SVG Image for Solutions */}
-                <img
-                  src={solutionsIcon}
-                  alt="Solutions Icon"
-                  className="w-40 h-36 ml-20 mb-10"
-                />
-              </div>
-            </div>
-            {/* Affordable */}
-            <div className="bg-gray-100 p-4 rounded-md md:w-[225px] h-[300px] text-justify px-5 shadow-2xl drop-shadow-2xl">
-              <h3 className="text-lg font-semibold mb-2">Affordable</h3>
-              <div className="text-justify">
-                <p>
-                  We provide the best plus affordable services to our customers.
-                </p>
-                {/* SVG Image for Affordable */}
-                <img
-                  src={affordableIcon}
-                  alt="Affordable Icon"
-                  className="w-40 h-40 ml-20"
-                />
-              </div>
-            </div>
-            {/* Experience */}
-            <div className="bg-gray-100 p-4 rounded-md md:w-[225px] h-[300px] text-justify px-8 shadow-2xl drop-shadow-2xl">
-              <h3 className="text-lg font-semibold mb-2">Experience</h3>
-              <div className="text-justify">
-                <p>
-                  Our team specializes in cutting-edge technologies including
-                  Artificial Intelligence, Deep Learning, 3D Modeling, UI/UX,
-                  and Web Development.
-                </p>
-              </div>
-              {/* SVG Image for Experience */}
-              <img
-                src={experienceIcon}
-                alt="Experience Icon"
-                className=" mx-20 mb-24"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <div className="title text-lg
+             text-justify  mt-16 font-semibold ">{card.title}</div>{" "}
+            {/* Render the title of each card */}
+            <div className="content">{card.content}</div>{" "}
+            {/* Render the content of each card */}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
-export default WhyUs;
+export default CardList; // Export the CardList component for use in other parts of the application
