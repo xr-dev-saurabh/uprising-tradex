@@ -2,11 +2,11 @@ import React from 'react';
 
 const Card = ({img, title, disc}) => {
   return (
-    <div className="flex border p-5 max-w-2xl rounded-lg  gap-10 shadow-md">
+    <div className="md:flex border p-5 max-w-2xl rounded-lg  gap-10 shadow-md">
       <img 
         src={img} 
         alt="" 
-        className="aspect-square w-1/4 object-conatin rounded-lg "
+        className="aspect-square w-full mb-5 md:m-auto md:w-1/4 object-conatin rounded-lg "
       />
       <div className="pl-4 flex flex-col justify-between">
         <div>
