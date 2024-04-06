@@ -7,7 +7,7 @@ import Img24 from '../assets/Image 4.png';
 
 export default function BigCard() {
     return (
-        <div className=''>
+        <div className='px-5'>
             {/* First Section */}
             <div className='flex flex-col lg:flex-row lg:justify-around items-center justify-center max-w-[1280px] mx-auto mt-20 z-10'>
                 <img src={Img1} alt="" className='w-full max-w-[500px]' />
@@ -34,7 +34,7 @@ export default function BigCard() {
                         <li><b>Agile Methodology:</b> We follow agile principles and practices, allowing us to adapt quickly to changing requirements and deliver solutions that are responsive to our clients' evolving needs.</li>
                     </ul>
                 </div>
-                <div className='bg-white shadow-2xl max-w-[600px] flex flex-col items-center justify-center md:justify-between'>
+                <div className='bg-white shadow-2xl max-w-[600px] flex flex-col items-center justify-center md:justify-between overflow-hidden'>
                     <div className='flex gap-4 mb-4 items-end'>
                         <img src={Img21} alt="" className='w-1/2 md:w-auto' />
                         <img src={Img22} alt="" className='w-1/2 md:w-auto' />
