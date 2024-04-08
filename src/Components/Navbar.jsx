@@ -26,19 +26,19 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className=" bg-[#110537] rounded-full  text-white  md:flex cursor-pointer ">
               <li className="hover:text-gray-500  px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                <IoMdHome className="mr-2" />
+                <IoMdHome size={19} className="mr-2" />
                 Home
               </li>
               <li className="hover:text-gray-500 px-3  py-2 rounded-md text-sm font-medium flex items-center">
-                <RiTeamFill className="mr-2" />
+                <RiTeamFill size={19} className="mr-2" />
                 About
               </li>
               <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                <MdMiscellaneousServices className="mr-2" />
+                <MdMiscellaneousServices size={19} className="mr-2" />
                 Services
               </li>
               <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                <MdPermContactCalendar className="mr-2" />
+                <MdPermContactCalendar size={19} className="mr-2" />
                 Contact
               </li>
             </ul>

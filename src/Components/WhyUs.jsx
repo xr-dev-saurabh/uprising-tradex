@@ -25,21 +25,21 @@ const CardList = () => {
       iconClass: "fa-regular fa-bow-arrow",
       title: "Customer-Centric Approach",
       content:
-        " Our customer-centric approach ensures that your needs are our top priority. We work closely with you to understand your requirements and deliver solutions that exceed your expectations.",
+        " Our customer-centric approach ensures that your needs are our top priority. We work closely with you to understand your requirements and deliver solutions .",
     },
     {
       accentColor: "#359c09",
       iconClass: "fa-solid fa-user-group",
       title: "Collaborative Partnership",
       content:
-        "  We see ourselves as your partners in success, working together with you to achieve your business goals and objectives.",
+        "  We see ourselves as your partners in success, working together with you to achieve  new heights in your  business goals and objectives.",
     },
     {
       accentColor: "#933cc2",
       iconClass: "fa-solid fa-headset",
       title: "Continuous Support",
       content:
-        "Our dedicated support team is available around the clock to assist you with any queries or issues, ensuring that you receive the assistance you need, when you need it.",
+        "Our dedicated support team is available around the clock to assist you with any queries or issues, ensuring that you receive the assistance you need.",
     },
     
    
@@ -47,9 +47,11 @@ const CardList = () => {
 
   // Return the JSX to render the list of cards
   return (
-    <div>
+    <div >
       <h1 className="text-3xl font-bold mb-6 text-center text-[#130d27]">Your Partner in Excellence</h1>
-      <ul className="flex flex-wrap justify-center justUL ">
+      <div className=" flex justify-center content-center  ">   
+          <ul className={`flex flex-wrap  ${window.innerWidth > 1350 ? "max-w-[80%] grid grid-cols-3 justify-center items-center " : ""}
+       justify-center justify-items-center  md:gap-0 gap-2 `}>
         {cards.map((card, index) => (
           <li
             key={index}
@@ -68,6 +70,8 @@ const CardList = () => {
           </li>
         ))}
       </ul>
+      </div>
+
     </div>
   );
 };

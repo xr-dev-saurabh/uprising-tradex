@@ -2,16 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-.justUL{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 2rem;
-    list-style: none;
-  }
+
   .card {
-    display: flex;
-    flex-direction: column;
+  
     width: 295px;
     --iconS: 6rem;
     --iconOffsetX: calc(var(--iconS) / 4);
