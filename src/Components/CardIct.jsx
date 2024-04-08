@@ -25,9 +25,9 @@ const CardIct = () => {
           {/* Follow Icons */}
           <div className="flex justify-center  items-center gap-16 my-10">
             <FaTwitter size={30} className=" transition-colors duration-300 ease-in-out hover:text-gray-500" />
-            <FaFacebook className="w-6 h-6 transition-colors duration-300 ease-in-out hover:text-gray-500" />
-            <FaLinkedin className="w-6 h-6 transition-colors duration-300 ease-in-out hover:text-gray-500" />
-            <FaInstagram className="w-6 h-6 transition-colors duration-300 ease-in-out hover:text-gray-500" />
+            <FaFacebook size={30} className="w-6 h-6 transition-colors duration-300 ease-in-out hover:text-gray-500" />
+            <FaLinkedin size={30} className="w-6 h-6 transition-colors duration-300 ease-in-out hover:text-gray-500" />
+            <FaInstagram size={40} className="w-6 h-6 transition-colors duration-300 ease-in-out hover:text-gray-500" />
           </div>
         </div>
 
@@ -50,9 +50,9 @@ const CardIct = () => {
           {/* Follow Icons */}
           <div className="flex justify-center  gap-16 items-center  my-10">
             <FaTwitter size={30} className=" transition-colors duration-300 ease-in-out hover:text-gray-500" />
-            <FaFacebook size={30} className="w-6 h-6 transition-colors duration-300 ease-in-out hover:text-gray-500" />
-            <FaLinkedin size={30} className="w-6 h-6 transition-colors duration-300 ease-in-out hover:text-gray-500" />
-            <FaInstagram size={30} className="w-6 h-6 transition-colors duration-300 ease-in-out hover:text-gray-500" />
+            <FaFacebook size={35} className="w-6 h-6 transition-colors duration-300 ease-in-out hover:text-gray-500" />
+            <FaLinkedin size={35} className="w-6 h-6 transition-colors duration-300 ease-in-out hover:text-gray-500" />
+            <FaInstagram size={40} className="w-6 h-6 transition-colors duration-300 ease-in-out hover:text-gray-500" />
           </div>
         </div>
       </div>

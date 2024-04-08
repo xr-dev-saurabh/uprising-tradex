@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-f8f9fb">
+    <nav className="bg-f8f9fb mt-6">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between ">
           <div className="flex-shrink-0">
@@ -26,26 +26,26 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className=" bg-[#110537] rounded-full  text-white  md:flex cursor-pointer ">
               <li className="hover:text-gray-500  px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                <IoMdHome size={19} className="mr-2" />
+                <IoMdHome size={24} className="mr-2" />
                 Home
               </li>
               <li className="hover:text-gray-500 px-3  py-2 rounded-md text-sm font-medium flex items-center">
-                <RiTeamFill size={19} className="mr-2" />
+                <RiTeamFill size={22} className="mr-2" />
                 About
               </li>
               <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                <MdMiscellaneousServices size={19} className="mr-2" />
+                <MdMiscellaneousServices size={23} className="mr-2" />
                 Services
               </li>
               <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                <MdPermContactCalendar size={19} className="mr-2" />
+                <MdPermContactCalendar size={22} className="mr-2" />
                 Contact
               </li>
             </ul>
           </div>
           <div className="hidden md:block">
             <div className="flex items-center">
-              <button className="bg-[#110537]  hover:bg-[#a5a5a5] text-white px-4 py-3 rounded-full text-sm font-medium flex items-cente">
+              <button className="bg-[#110537]  hover:bg-[#a5a5a5] text-white px-4 py-[10px] rounded-full text-sm font-medium flex items-cente">
                 <FaShoppingCart size={19} className="mr-2" />
                 Order Now
               </button>
