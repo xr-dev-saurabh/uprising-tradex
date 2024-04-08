@@ -29,8 +29,8 @@ const Footer = () => {
       {/* Middle Section */}
       <div className="my-6 flex flex-col sm:flex-row justify-between sm:text-justify ">
         <div className="mb-4 sm:mb-0">
-          <h1 className="text-2xl sm:text-5xl font-semibold">Let's take your</h1>
-          <h1 className="text-xl sm:text-4xl font-semibold text-red-600">
+          <h1 className="text-xl sm:text-5xl font-semibold">Let's take your</h1>
+          <h1 className="text-lg sm:text-4xl font-semibold text-red-600">
             {" "}
             business to the next level
           </h1>
