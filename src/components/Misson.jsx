@@ -14,7 +14,7 @@ export default function Misson() {
                     backgroundSize: '80% '
                 }}>
                 <div className='p-20 w-[40%]'>
-                    <h1 className='text-4xl text-white font-bold tracking-wider'>Our Misson</h1>
+                    <h1 className='text-4xl text-white font-bold tracking-wider font-serif'>Our Misson</h1>
                     <ul className='list-disc text-white ml-5 mt-10 text-lg'>
                         <li>Assist customers in achieving their goals through differentiated products and services. </li>
                         <li> Help real estate and hospitality businesses enhance customer experiences with compelling virtual reality solutions.</li>
@@ -27,7 +27,7 @@ export default function Misson() {
             </div>
             <div className='lg:hidden bg-[#fcc9c4] w-full pb-10 '>
                 <div className='p-5'>
-                    <h1 className='text-3xl text-white font-bold tracking-wider'>Our Misson</h1>
+                    <h1 className='text-3xl text-white font-bold tracking-wider font-serif'>Our Misson</h1>
                     <ul className='list-disc text-white ml-5 mt-10 text-lg'>
                         <li>Assist customers in achieving their goals through differentiated products and services. </li>
                         <li> Help real estate and hospitality businesses enhance customer experiences with compelling virtual reality solutions.</li>
