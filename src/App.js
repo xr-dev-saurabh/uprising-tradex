@@ -12,13 +12,13 @@ import ProductsRow from "./components/product/ProductsRow";
 export default function App() {
   return (
    <div className="bg-white">
-    {/* <Hero />
+    <Hero />
     <BigCard />
     <Servies />
-    <Misson /> */}
-    <FirstSection />
+    <Misson />
+    {/* <FirstSection />
     <SecondSection />
-    <ThirdSection />
+    <ThirdSection /> */}
     {/* <ProductHero />
     <ProductsRow /> */}
    </div>
