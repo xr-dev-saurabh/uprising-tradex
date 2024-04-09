@@ -53,7 +53,7 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          <div className={`top-4 right-4 z-50 ${isOpen ? 'absolute' : ''}`} >
+          <div className={`md:hidden ${isOpen ? 'block fixed top-4 right-4 z-50' : ''}`}>
             <button onClick={toggleMenu} type="button" className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
               <span className="sr-only">Open main menu</span>
               {/* Icon when menu is closed */}
@@ -94,7 +94,6 @@ const Navbar = () => {
             Order Now
           </button>
           <div className="flex justify-center gap-28 pt-10">
-            
             <button  className="icon hover:text-gray-500">
               <FaXTwitter size={40} />
             </button>
@@ -107,7 +106,6 @@ const Navbar = () => {
             <button className="icon hover:text-gray-500">
               <IoLogoInstagram size={40} />
             </button>
-            
           </div>
         </div>
       </div>
