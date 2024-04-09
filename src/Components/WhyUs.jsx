@@ -49,9 +49,9 @@ const CardList = () => {
   return (
     <div >
       <h1 className="text-3xl font-bold mb-6 text-center text-[#130d27]">Your Partner in Excellence</h1>
-      <div className=" flex justify-center content-center  ">   
-          <ul className={`flex flex-wrap  ${window.innerWidth > 1350 ? "max-w-[80%] grid grid-cols-3 justify-center items-center " : ""}
-       justify-center justify-items-center  md:gap-0 gap-2 `}>
+      <div className=" flex justify-center justify-items-center">   
+          <ul className={` flex flex-wrap ${window.innerWidth > 1350 ? "max-w-[80%] flex grid-cols-3 justify-center items-center" : ""}
+         md:gap-0 gap-2 justify-center items-center`}>
         {cards.map((card, index) => (
           <li
             key={index}
