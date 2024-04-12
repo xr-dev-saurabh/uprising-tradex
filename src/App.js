@@ -1,4 +1,4 @@
-import {SVGMaskEffectDemo} from "./components/NewHero";
+import { Hero } from "./components/Hero";
 // import BigCard from "./components/BigCard";
 // import Hero from "./components/Hero";
 // import Misson from "./components/Misson";
@@ -13,7 +13,7 @@ import {SVGMaskEffectDemo} from "./components/NewHero";
 export default function App() {
   return (
    <div className="bg-white">
-    <SVGMaskEffectDemo />
+    <Hero />
    </div>
   )
 }
