@@ -3,14 +3,14 @@ import CoverImg from '../assets/CoverImage.png'; // Ensure the correct path to y
 
 export default function Services() {
     return (
-        <div className="w-full xl:w-[80%] mx-auto py-8 xl:py-0 px-5 xl:px-40 my-40" style={{
+        <div className="w-full xl:w-[80%] mx-auto py-8 xl:py-0 px-5 xl:px-40 my-10 xl:my-40 bg-white z-20 relative" style={{
             backgroundImage: `url(${CoverImg})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
         }}>
             {/* Right Section */}
-            <div className="p-8 xl:p-12 top-10 xl:relative bg-white/70 backdrop-blur-sm  w-full xl:w-[70%]  shadow-[-5px_-5px_25px_1px_#ffffff,5px_5px_25px_1px_#33333350] drop-shadow-2xl xl:ml-[300px]">
-                <h1 className="text-3xl xl:text-4xl font-bold mb-8 xl:mb-12">Fast moving consumer goods</h1>
+            <div className="p-8 xl:p-12 top-10 xl:relative bg-white/70 backdrop-blur-sm  w-full xl:w-[70%]  lg:shadow-[-5px_-5px_25px_1px_#ffffff,5px_5px_25px_1px_#33333350] drop-shadow-2xl xl:ml-[300px]">
+                <h1 className="text-3xl xl:text-4xl font-bold mb-8 xl:mb-12 font-serif">Fast moving consumer goods</h1>
                 <ul className="list-disc pl-5 mb-4 xl:mb-1 text-lg text-gray-800 text-justify">
                     <li><b>Export of Packaged Foods:</b> We specialize in exporting a variety of packaged foods, including Indian sweets, namkeens, wafers, and other commodities, showcasing the rich flavors and diverse culinary traditions of India to global markets.</li>
                     <li><b>Export of Dry Fruits, Raisins, and Peanuts:</b> Our import and export services extend to dry fruits, raisins, and peanuts, providing access to high-quality products sourced from around the world to meet the demands of our clients.</li>
