@@ -6,6 +6,7 @@ import { RiTeamFill } from "react-icons/ri";
 import { MdPermContactCalendar } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
 import { ModalHam } from "./ModalHam";    
+import { FaWindowClose } from "react-icons/fa"; 
 
 const Navbar = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -90,7 +91,7 @@ const Navbar = () => {
                         className="absolute top-3 right-3 text-black"
                         onClick={closeModal}
                       >
-                        Close
+                        <FaWindowClose size={35} />
                       </button>
                     </div>
                   </div>
