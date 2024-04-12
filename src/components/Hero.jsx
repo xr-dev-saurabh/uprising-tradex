@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaArrowRight, FaRegCirclePlay } from 'react-icons/fa6';
+import { FaRegCirclePlay } from 'react-icons/fa6';
 import Partcles from './Particles.jsx';
 
 
