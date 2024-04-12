@@ -3,9 +3,8 @@
 import React, { useState } from 'react';
 import { IoMdHome } from "react-icons/io";
 import { RiTeamFill } from "react-icons/ri";
-import { MdMiscellaneousServices, MdPermContactCalendar } from "react-icons/md";
+import {  MdPermContactCalendar } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
-import Image from "../assets/logo.png";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
@@ -19,11 +18,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-f8f9fb mt-6">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+    <nav className="bg-f8f9fb md:mt-6">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+        <div className=" md:w-[80%] w-[90%] flex items-center py-1 justify-between bg-[#110537] rounded-full text-white">
           <div className={`flex-shrink-0 ${isOpen ? 'hidden' : ''}`}>
-            <img src={Image} alt="Logo" className="bg-[#110537] h-[45px] w-[100px]" />
+            <h1 style={{fontFamily: '"Calistoga", serif'}} className='ml-5'> Uprising Tradex</h1>
           </div>
           <div className="hidden md:block">
             <ul className="bg-[#110537] rounded-full text-white md:flex cursor-pointer">
@@ -36,32 +35,23 @@ const Navbar = () => {
                 About
               </li>
               <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                <MdMiscellaneousServices size={23} className="mr-2" />
-                Services
-              </li>
-              <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
                 <MdPermContactCalendar size={22} className="mr-2" />
                 Contact
-              </li>
+              </li >
+              <li  className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center"><FaShoppingCart size={19} className="mr-2" />
+                Order Now</li>
             </ul>
           </div>
-          <div className="hidden md:block">
-            <div className="flex items-center">
-              <button className="bg-[#110537] hover:bg-[#a5a5a5] text-white px-4 py-[10px] rounded-full text-sm font-medium flex items-cente">
-                <FaShoppingCart size={19} className="mr-2" />
-                Order Now
-              </button>
-            </div>
-          </div>
+          
           <div className={`md:hidden ${isOpen ? 'block fixed top-4 right-4 z-50' : ''}`}>
-            <button onClick={toggleMenu} type="button" className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <button onClick={toggleMenu} type="button" className="bg-gray-800 inline-flex rounded-full items-center justify-center p-2 text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
               <span className="sr-only">Open main menu</span>
               {/* Icon when menu is closed */}
-              <svg className={`${isOpen ? 'hidden' : 'block'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <svg className={`${isOpen ? 'hidden' : 'block'} h-6 w-6 mr-2`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
               {/* Icon when menu is open */}
-              <svg className={`${isOpen ? 'block' : 'hidden'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <svg className={`${isOpen ? 'block' : 'hidden'} h-6 w-6 mr-2`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
@@ -79,10 +69,6 @@ const Navbar = () => {
             <li className=" gap-3 border-b border-black text-3xl text-black font-bold flex items-center hover:text-gray-500">
               <RiTeamFill size={40} className="mr-2" />
               About
-            </li>
-            <li className="gap-3 border-b border-black text-3xl text-black font-bold flex items-center hover:text-gray-500">
-              <MdMiscellaneousServices size={40} className="mr-2" />
-              Services
             </li>
             <li className="gap-3 border-b border-black text-3xl text-black font-bold flex items-center hover:text-gray-500">
               <MdPermContactCalendar size={40} className="mr-2" />
