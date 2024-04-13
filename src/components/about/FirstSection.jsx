@@ -5,12 +5,9 @@ export default function FirstSection() {
     return (
         <>
 
-            <div className='p-5 lg:p-24 flex w-full bg-[#fbf9f9]'>
-                <div className='w-[20%] hidden lg:flex items-center text-lg font-semibold'>
-                    <h3 className='w-20'>About-us our team</h3>
-                </div>
-                <div className='w-full lg:w-[80%]'>
-                    <h1 className='text-5xl mb-10 text-center lg:text-left'>About-us</h1>
+            <div className='p-5 lg:p-24  w-full bg-[#f8f9fb]'>
+                <div className=''>
+                    <h1 className='text-3xl lg:text-5xl mb-10 text-center font-serif'>About-us</h1>
                     <p className='text-lg text-justify'>
                         Founded in 2015, Uprising Tradex LLP aims to become the leading super dealer/distributor of FMCG products in Gujarat, extending its reach to other western states in India. To achieve this goal, Uprising Tradex LLP's critical success factors will be to identify emerging trends and integrate them into our company operations, respond quickly to customers, provide high-quality services, invest time and money in marketing and advertising, and stay ahead of the "technology curve."
                         <br />
