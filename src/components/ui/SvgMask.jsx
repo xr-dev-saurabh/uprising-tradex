@@ -7,7 +7,7 @@ import throttle from "lodash/throttle";
 export const SvgMask = ({
   children,
   revealText,
-  size = 20,
+  size = 10,
   revealSize = 300,
   className,
 }) => {
@@ -42,11 +42,11 @@ export const SvgMask = ({
       ref={containerRef}
       className={cn("h-screen relative", className)}
       animate={{
-        backgroundColor: isHovered ? "var(--slate-900)" : "var(--white)",
+        backgroundColor: isHovered ? "#f8f9fb" : "",
       }}
     >
       <motion.div
-        className="w-full h-full flex items-center justify-center text-6xl absolute bg-black bg-grid-white/[0.2] text-white [mask-repeat:no-repeat]"
+        className="w-full h-full flex items-center justify-center text-6xl absolute bg-black bg-grid-white/[0.2] text-white [mask-size:40px] [mask-repeat:no-repeat]"
         style={{ maskImage: `url(${MaskSvg})` }}
         animate={{
           WebkitMaskPosition: `${mousePosition.x - maskSize / 2}px ${
@@ -64,7 +64,7 @@ export const SvgMask = ({
           onMouseLeave={() => {
             setIsHovered(false);
           }}
-          className="max-w-4xl mx-auto text-center text-white  text-4xl font-bold relative z-20"
+          className="full mx-auto text-center text-white  text-4xl font-bold relative z-1"
         >
           {children}
         </div>

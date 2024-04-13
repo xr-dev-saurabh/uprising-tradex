@@ -12,7 +12,7 @@ import { Hero } from "./components/Hero";
 
 export default function App() {
   return (
-   <div className="bg-white">
+   <div className="bg-[#f8f9fb]">
     <Hero />
    </div>
   )
