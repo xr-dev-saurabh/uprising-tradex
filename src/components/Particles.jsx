@@ -1,6 +1,6 @@
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim"; // loads tsparticles-slim
-import { loadFull } from "tsparticles"; // loads tsparticles
+// import { loadFull } from "tsparticles"; // loads tsparticles
 import { useCallback, useMemo } from "react";
 
 // tsParticles Repository: https://github.com/matteobruni/tsparticles
@@ -12,7 +12,7 @@ const ParticlesComponent = (props) => {
         // all options can be found here: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
         return {
             fullScreen: {
-                enable: false,
+                enable: true,
             },
             background: {
                 color: {
