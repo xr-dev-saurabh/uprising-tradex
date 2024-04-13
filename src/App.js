@@ -12,8 +12,16 @@ import { Hero } from "./components/Hero";
 
 export default function App() {
   return (
-   <div className="bg-[#f8f9fb]">
+   <>
     <Hero />
-   </div>
+    <BigCard />
+    <Servies />
+    <Misson />
+    {/* <FirstSection />
+    <SecondSection />
+    <ThirdSection /> */}
+    {/* <ProductHero />
+    <ProductsRow /> */}
+   </>
   )
 }
