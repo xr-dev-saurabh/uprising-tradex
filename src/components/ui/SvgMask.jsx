@@ -70,7 +70,7 @@ export const SvgMask = ({
         </div>
       </motion.div>
 
-      <div className="w-full h-full flex items-center justify-center mt-5 text-white">
+      <div className="w-full h-full flex items-center justify-center text-white">
         {revealText}
       </div>
     </motion.div>

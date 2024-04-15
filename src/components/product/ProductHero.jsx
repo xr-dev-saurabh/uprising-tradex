@@ -18,8 +18,8 @@ export default function ProductHero () {
     return (
         <div className='h-screen '>
             <section className="flex justify-center items-center h-[100vh] ">
-                <video className="w-full h-full absolute object-cover  blur-[1px]" src={BgVideo} type="video/mp4" autoPlay muted loop onPlaying={playBack}></video>
-                <div className='z-10 w-full h-full bg-black opacity-20 absolute'></div>
+                <video className="w-full z-[-10px] h-full absolute object-cover  blur-[1px]" src={BgVideo} type="video/mp4" autoPlay muted loop onPlaying={playBack}></video>
+                <div className='z-[-5px] w-full h-full bg-black opacity-20 absolute'></div>
                 <div className="z-20 flex flex-col justify-center items-center mt-5 p-5">
                     <h1 className="text-center text-white text-3xl md:text-7xl px-4 mx-auto" style={{ fontFamily: "Bebas Neue" }}>YOU ORDER WE DELIVER</h1>
                     <a href='#products' className='group border px-3 py-2 mt-5 active:border-2  font-semibold tracking-wider scroll-smooth  text-white' onClick={scrollSmoothHandler}>

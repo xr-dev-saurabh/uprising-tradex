@@ -1,5 +1,4 @@
 import React from "react";
-import Fancy2 from "../../assets/Rectangle 47.png";
 
 export default function SecondSection() {
   return (

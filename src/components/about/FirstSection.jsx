@@ -4,7 +4,7 @@ import Fancy from "../../assets/about2.jpg";
 export default function FirstSection() {
   return (
     <>
-    <div className="justify-items-center flex justify-center bg-[#f8f9fb]">
+    <div className="justify-items-center mt-14 flex justify-center bg-[#f8f9fb]">
       <div className="p-5 md:w-[90%] w-full bg-[#f8f9fb]">
         <div className="">
           <h1 className="text-3xl lg:text-5xl mb-5 mt-9 md:mb-10 text-center font-serif">

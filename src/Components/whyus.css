@@ -4,8 +4,8 @@
 
 
   .card {
-  
-    width: 295px;
+    width: "100%";
+    max-width: 295px;
     --iconS: 6rem;
     --iconOffsetX: calc(var(--iconS) / 4);
     --iconOffsetY: calc(var(--iconS) / 2.5);
@@ -46,6 +46,7 @@
   }
   .card .icon {
     width: var(--iconS);
+    max-width: var(--iconS);
     aspect-ratio: 1;
     margin-top: calc(var(--iconOffsetY) * -1);
     margin-left: calc(var(--iconOffsetX) * -1);

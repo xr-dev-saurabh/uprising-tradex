@@ -3,7 +3,7 @@ import CoverImg from '../assets/CoverImage.png'; // Ensure the correct path to y
 
 export default function Services() {
     return (
-        <div className="w-full xl:w-[80%] mx-auto py-8 xl:py-0 px-5 xl:px-40 xl:my-[68px] z-20 relative" style={{
+        <div className="w-full xl:w-[80%] mx-auto mt-10  py-8 xl:py-0 px-5 xl:px-40 xl:my-[78px] z-20 relative" style={{
             backgroundImage: `url(${CoverImg})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',

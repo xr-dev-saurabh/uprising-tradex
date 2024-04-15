@@ -47,14 +47,16 @@ const Navbar = () => {
   }, [modalOpen]);
 
   return (
-    <nav className="bg-[#f8f9fb] w-full absolute top-0  py-6  bg-grid-black/[0.2]">
+    <nav className="bg-transparent w-full absolute top-0  py-6 ">
       <div className="mx-auto px-4 relative sm:px-6 lg:px-8 flex justify-center">
         <div className=" md:w-[80%] w-[90%] flex items-center py-1 justify-between bg-[#110537] rounded-full text-white">
           <div className={`flex-shrink-0`}>
+          <a href="https://www.uprisingtradex.com" target="_blank" rel="noopener noreferrer">
             <h1 style={{ fontFamily: '"Calistoga", serif' }} className="ml-5">
               {" "}
               Uprising Tradex
             </h1>
+            </a>
           </div>
 
           <div className="">
@@ -99,22 +101,30 @@ const Navbar = () => {
               </div>
             ) : (
               <ul className="bg-[#110537] rounded-full text-white md:flex cursor-pointer">
+              <a href="#home" target="_blank" rel="noopener noreferrer">
                 <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
                   <IoMdHome size={24} className="mr-2" />
                   Home
                 </li>
+                </a>
+                <a href="#about" target="_blank" rel="noopener noreferrer">
                 <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
                   <RiTeamFill size={22} className="mr-2" />
                   About
                 </li>
+                </a>
+                <a href="#footer" target="_blank" rel="noopener noreferrer">
                 <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
                   <MdPermContactCalendar size={22} className="mr-2" />
                   Contact
                 </li>
+                </a>
+                <a href="#Order" target="_blank" rel="noopener noreferrer">
                 <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
                   <FaShoppingCart size={19} className="mr-2" />
                   Order Now
                 </li>
+                </a>
               </ul>
             )}
           </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import TeamImg from "../../assets/team.jpg";
 import WhyUs from "../../assets/why-us.png";
 import WhyUsMobile from "../../assets/whyus-mobile.png";
 

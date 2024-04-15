@@ -16,11 +16,13 @@ export function Hero() {
                   We work for people and make their dreams come true.
               </p>
           </div>
-          <button className='group border text-gray-800 border-black px-3 py-2 mt-6 font-semibold tracking-wider  text-base md:text-[27px] bg-white flex items-center'>
-              <MdPlayCircleOutline  />
-              <hr className='w-10 border-[1.85px] border-gray-800 mr-1'/>
+          <a href="#Servies" target="_blank" rel="noopener noreferrer">
+          <button className='group border text-gray-800 border-black px-1 py-2 mt-6 font-semibold tracking-wider  text-base md:text-[20px] bg-white flex items-center'>
+              <MdPlayCircleOutline size={30} />
+              <hr className='w-5 border-[1.68px] border-gray-800 mr-1'/>
               Discover
           </button>
+          </a>
       </div>
           </p>
         }
@@ -36,11 +38,13 @@ export function Hero() {
               We work for people and make their dreams come true.
           </p>
       </div>
-      <button className='text-white border-white border px-3 py-2 mt-6 font-semibold tracking-wider mx-auto text-base md:text-[27px] bg-black flex items-center'>
-          <MdPlayCircleOutline />
-          <hr className='w-10 border-[1.85px] border-white mr-1'/>
+      <a href="#Servies" target="_blank" rel="noopener noreferrer">
+      <button className='text-white border-white border px-1 py-2 mt-6 font-semibold tracking-wider mx-auto text-base md:text-[20px] bg-black flex items-center'>
+          <MdPlayCircleOutline size={30}/>
+          <hr className='w-5 border-[1.68px] border-white mr-1'/>
           Discover
       </button>
+      </a>
   </div>
   
       </SvgMask>

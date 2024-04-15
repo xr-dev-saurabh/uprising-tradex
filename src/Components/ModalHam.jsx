@@ -13,38 +13,54 @@ export const ModalHam = () => {
     <div className="w-full h-screen">
       <div className="p-5 mt-6">
         <ul className="flex flex-col justify-center items-center  space-y-10 w-full">
-          <li className="w-[150px] gap-2 text-[20px] text-white font-bold flex justify-start hover:text-gray-500">
-            <IoMdHome size={28} className="" />
+        <a href="#home" target="_blank" rel="noopener noreferrer">
+          <li className="w-[190px] gap-2 text-[20px] text-white font-bold flex justify-center hover:text-gray-500">
+            <IoMdHome size={26} className="" />
             Home
           </li>
-          <li className="w-[150px] gap-2 text-[20px] text-white font-bold flex justify-start hover:text-gray-500">
-            <RiTeamFill size={28} className="" />
+          </a>
+          <a href="#about" target="_blank" rel="noopener noreferrer">
+          <li className="w-[190px] gap-2 text-[20px] text-white font-bold flex justify-center hover:text-gray-500">
+            <RiTeamFill size={26} className="" />
             About
           </li>
-          <li className="w-[150px] gap-2 text-[20px] text-white font-bold flex justify-start hover:text-gray-500">
+          </a>
+          <a href="#footer" target="_blank" rel="noopener noreferrer">
+          <li className="w-[190px] gap-2 text-[20px] text-white font-bold flex justify-center hover:text-gray-500">
           <MdPermContactCalendar size={28} className="" />
             Contact
           </li>
-          <li className="w-[150px] gap-2  text-[20px] text-white font-bold flex justify-start hover:text-gray-500">
+          </a>
+          <a href="#Order" target="_blank" rel="noopener noreferrer">
+          <li className="w-[190px] gap-2 ml-3  text-[20px] text-white font-bold flex justify-center hover:text-gray-500">
              <FaShoppingCart size={26} className="" />
             Order Now
           </li>
+          </a>
           
         </ul>
         <div className="place-content-center w-full flex mt-12 items-center">
         <div className="flex w-[500px] justify-evenly gap-5 border rounded-[5px] border-white p-2 ">
-          <button className="hover:text-gray-500">
+        <a href="https://twitter.com/uprisingtradex" target="_blank" rel="noopener noreferrer">
+        <button className="hover:text-gray-500">
             <FaXTwitter size={30} color="#110537" fill="white" />
           </button>
+          </a>
+          <a href="https://www.facebook.com/uprisingtradexLLP/" target="_blank" rel="noopener noreferrer">
           <button className="hover:text-gray-500">
             <FaFacebook size={30} color="#110537" fill="white" />
           </button>
+          </a>
+          <a href="https://in.linkedin.com/in/uprising-tradex-llp-2a94b411b" target="_blank" rel="noopener noreferrer">
           <button className="hover:text-gray-500">
             <FaLinkedin size={30} color="#110537" fill="white" />
           </button>
+          </a>
+          <a href="https://www.instagram.com/reealtech/" target="_blank" rel="noopener noreferrer">
           <button className="hover:text-gray-500">
             <IoLogoInstagram size={30} color="#110537" fill="white" />
           </button>
+          </a>
         </div>
         </div>
       </div>

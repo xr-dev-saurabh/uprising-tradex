@@ -15,9 +15,11 @@ const Card = ({img, title, disc}) => {
           <h3 className="text-xl font-bold uppercase">{title}</h3>
           <p>{disc}</p>
         </div>
-        <button className="bg-green-500 text-white px-2 py-1 text-[14px] md:px-3 md:py-2 rounded-lg self-end mt-4 uppercase hover:bg-green-400 hover:tracking-widest transition-all duration-500">
+        <a href="#footer" target="_blank" rel="noopener noreferrer" className='bg-green-500 text-white px-2 py-1 text-[14px] md:px-3 md:py-2 rounded-lg self-end mt-4 uppercase hover:bg-green-400'>
+        <button className="hover:tracking-widest transition-all duration-500">
         Enquiry
         </button>
+        </a>
       </div>
     </div>
   );

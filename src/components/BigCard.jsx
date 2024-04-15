@@ -7,7 +7,7 @@ import Img24 from "../assets/Image 4.png";
 
 export default function BigCard() {
   return (
-    <div className="px-5 bg-[#f8f9fb] z-20 relative md:mt-12 mt-5">
+    <div className="px-5 bg-[#f8f9fb] z-20 relative md:mt-12 mt-12">
       {/* First Section */}
       <div className="flex flex-col lg:flex-row lg:justify-around items-center justify-center max-w-[1280px] mx-auto z-10">
         <img src={Img1} alt="" className="w-full max-w-[500px] bg-[#f8f9fb]" />
@@ -42,9 +42,9 @@ export default function BigCard() {
       </div>
 
       {/* Second Section */}
-      <div className="flex flex-col-reverse lg:flex-row lg:justify-around items-center justify-center max-w-[1280px] mx-auto mt-8 md:mt-[40px] mb-5 z-10">
+      <div className="flex flex-col-reverse lg:flex-row lg:justify-around items-center justify-center max-w-[1280px] mx-auto mt-12 md:mt-[60px] mb-5 z-10">
         <div className="w-full max-w-[90%] lg:max-w-[600px] p-4">
-          <h1 className="text-3xl lg:text-4xl mt-4 font-bold mb-8 text-center font-serif">
+          <h1 className="text-3xl lg:text-4xl mt-6 font-bold mb-8 text-center font-serif">
             Our Advantages
           </h1>
           <ul className="list-disc lg:ml-8 text-justify text-lg text-gray-600">

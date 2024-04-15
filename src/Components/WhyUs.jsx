@@ -48,10 +48,10 @@ const CardList = () => {
   // Return the JSX to render the list of cards
   return (
     <div >
-      <h1 className="text-3xl font-bold mb-6 text-center text-[#130d27]">Your Partner in Excellence</h1>
+      <h1 className="text-3xl lg:text-4xl font-bold mb-8 mt-12 md:mt-8 text-center font-serif">Your Partner in Excellence</h1>
       <div className=" flex justify-center justify-items-center">   
           <ul className={` flex flex-wrap ${window.innerWidth > 1350 ? "max-w-[80%] flex grid-cols-3 justify-center items-center" : ""}
-         md:gap-0 gap-2 justify-center items-center`}>
+         md:gap-4 gap-3 justify-center items-center`}>
         {cards.map((card, index) => (
           <li
             key={index}
@@ -59,14 +59,11 @@ const CardList = () => {
             style={{ "--accent-color": card.accentColor }} // Apply custom accent color to each card
           >
             <div className="icon absolute top-0 left-0">
-              {/* Render the icon for each card */}
               <i className={`far ${card.iconClass} `}></i>
             </div>
             <div className="title text-lg
              text-justify  mt-16 font-semibold ">{card.title}</div>{" "}
-            {/* Render the title of each card */}
             <div className="content">{card.content}</div>{" "}
-            {/* Render the content of each card */}
           </li>
         ))}
       </ul>
