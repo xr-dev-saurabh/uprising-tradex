@@ -4,6 +4,10 @@ import BigCard from "./components/BigCard";
 import {Hero} from "./components/Hero";
 import Misson from "./components/Misson";
 import Servies from "./components/Servies";
+import Navbar from "./components/Navbar";
+import CardIct from "./components/CardIct";
+import WhyUs from "./components/WhyUs";
+import Footer from "./components/Footer";
 // import FirstSection from "./components/about/FirstSection";
 // import SecondSection from "./components/about/SecondSection";
 // import ThirdSection from "./components/about/ThirdSection";
@@ -21,10 +25,9 @@ export default function App() {
             path="/"
             element={
               <>
-                <Hero />
-                <BigCard />
-                <Servies />
-                <Misson />
+             
+              <Hero />
+              <Navbar />
               </>
             }
           />

@@ -12,38 +12,40 @@ export const ModalHam = () => {
   return (
     <div className="w-full h-screen">
       <div className="p-5 mt-6">
-        <ul className="flex flex-col space-y-10 w-full">
-          <li className="gap-3 border-b border-black text-2xl text-black font-bold flex items-center hover:text-gray-500">
-            <IoMdHome size={30} className="mr-2" />
+        <ul className="flex flex-col justify-center items-center  space-y-10 w-full">
+          <li className="w-[150px] gap-2 text-[20px] text-white font-bold flex justify-start hover:text-gray-500">
+            <IoMdHome size={28} className="" />
             Home
           </li>
-          <li className=" gap-3 border-b border-black text-2xl text-black font-bold flex items-center hover:text-gray-500">
-            <RiTeamFill size={30} className="mr-2" />
+          <li className="w-[150px] gap-2 text-[20px] text-white font-bold flex justify-start hover:text-gray-500">
+            <RiTeamFill size={28} className="" />
             About
           </li>
-          <li className="gap-3 border-b border-black text-2xl text-black font-bold flex items-center hover:text-gray-500">
-            <MdPermContactCalendar size={30} className="mr-2" />
+          <li className="w-[150px] gap-2 text-[20px] text-white font-bold flex justify-start hover:text-gray-500">
+          <MdPermContactCalendar size={28} className="" />
             Contact
           </li>
-          <li className=" gap-3 border-b border-black text-2xl text-black font-bold flex items-center hover:text-gray-500">
-            <FaShoppingCart className="mr-2" />
+          <li className="w-[150px] gap-2  text-[20px] text-white font-bold flex justify-start hover:text-gray-500">
+             <FaShoppingCart size={26} className="" />
             Order Now
           </li>
           
         </ul>
-        <div className="flex justify-center gap-11 pt-10">
+        <div className="place-content-center w-full flex mt-12 items-center">
+        <div className="flex w-[500px] justify-evenly gap-5 border rounded-[5px] border-white p-2 ">
           <button className="hover:text-gray-500">
-            <FaXTwitter size={30} style={{ color: "black" }} />
+            <FaXTwitter size={30} color="#110537" fill="white" />
           </button>
           <button className="hover:text-gray-500">
-            <FaFacebook size={30} style={{ color: "black" }} />
+            <FaFacebook size={30} color="#110537" fill="white" />
           </button>
           <button className="hover:text-gray-500">
-            <FaLinkedin size={30} style={{ color: "black" }} />
+            <FaLinkedin size={30} color="#110537" fill="white" />
           </button>
           <button className="hover:text-gray-500">
-            <IoLogoInstagram size={30} style={{ color: "black" }} />
+            <IoLogoInstagram size={30} color="#110537" fill="white" />
           </button>
+        </div>
         </div>
       </div>
     </div>

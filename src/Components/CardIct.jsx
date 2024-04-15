@@ -1,9 +1,10 @@
 import React from "react";
+
 import {FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 const CardIct = () => {
   return (
-    <div className="justify-center items-center w-full   md:flex-row ">
+    <div className="justify-center items-center w-full md:flex-row ">
       <div className="flex flex-wrap justify-center gap-12 items-center px-5 md:gap-28 py-5">
         {/* First Card (ICT Section) */}
         <div className="bg-white rounded-lg shadow-lg w-[90%] max-w-md p-8">

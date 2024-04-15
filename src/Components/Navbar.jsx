@@ -6,7 +6,7 @@ import { RiTeamFill } from "react-icons/ri";
 import { MdPermContactCalendar } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
 import { ModalHam } from "./ModalHam";    
-import { FaWindowClose } from "react-icons/fa"; 
+import { FaWindowClose } from "react-icons/fa";
 
 const Navbar = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -47,8 +47,8 @@ const Navbar = () => {
   }, [modalOpen]);
 
   return (
-    <nav className="bg-f8f9fb md:mt-6 mt-2">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+    <nav className="bg-[#f8f9fb] w-full absolute top-0  py-6  bg-grid-black/[0.2]">
+      <div className="mx-auto px-4 relative sm:px-6 lg:px-8 flex justify-center">
         <div className=" md:w-[80%] w-[90%] flex items-center py-1 justify-between bg-[#110537] rounded-full text-white">
           <div className={`flex-shrink-0`}>
             <h1 style={{ fontFamily: '"Calistoga", serif' }} className="ml-5">
@@ -83,15 +83,15 @@ const Navbar = () => {
                 </button>
 
                 {modalOpen && (
-                  <div className="fixed w-full inset-0 items-center justify-center z-50 bg-black bg-opacity-50 scroll-0">
-                    <div className="bg-white p-4">
+                  <div className="fixed w-full inset-0 items-center justify-center z-50 bg-[#110537] scroll-0">
+                    <div className="p-4">
                       <ModalHam />
                       <button
                         type="button"
-                        className="absolute top-3 right-3 text-black"
+                        className="absolute top-3 right-3 "
                         onClick={closeModal}
                       >
-                        <FaWindowClose size={35} />
+                        <FaWindowClose size={35} color="#110537" fill="white"/>
                       </button>
                     </div>
                   </div>

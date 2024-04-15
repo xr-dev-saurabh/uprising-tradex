@@ -56,7 +56,7 @@ export const SvgMask = ({
         }}
         transition={{ type: "tween", ease: "backOut", duration: 0.1 }}
       >
-        <div className="absolute inset-0 bg-black h-full w-full z-0 opacity-50" />
+        <div className="absolute inset-0 bg-black h-full w-full z-2 opacity-50" />
         <div
           onMouseEnter={() => {
             setIsHovered(true);
@@ -64,13 +64,13 @@ export const SvgMask = ({
           onMouseLeave={() => {
             setIsHovered(false);
           }}
-          className="full mx-auto text-center text-white  text-4xl font-bold relative z-1"
+          className="w-full h-full flex text-white justify-center  items-center relative"
         >
           {children}
         </div>
       </motion.div>
 
-      <div className="w-full h-full flex items-center justify-center  text-white">
+      <div className="w-full h-full flex items-center justify-center mt-5 text-white">
         {revealText}
       </div>
     </motion.div>
