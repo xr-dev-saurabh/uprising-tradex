@@ -42,7 +42,7 @@ export const SvgMask = ({
       ref={containerRef}
       className={cn("h-screen relative", className)}
       animate={{
-        backgroundColor: isHovered ? "#f8f9fb" : "",
+        backgroundColor: isHovered ? "#f8f9fb" : "#ffffff",
       }}
     >
       <motion.div

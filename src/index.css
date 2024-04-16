@@ -18,3 +18,7 @@ body {
 .icon-white {
   fill: white;
 }
+
+html {
+  scroll-behavior: smooth;
+}

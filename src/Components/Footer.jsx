@@ -5,7 +5,10 @@ import { FaPhone } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="px-4 sm:px-8 md:px-16 mt-10 w-full bg-gray-800 justify-center flex flex-col items-center text-white">
+    <div
+      id="contact"
+      className="px-4 sm:px-8 md:px-16 mt-10 w-full bg-gray-800 justify-center flex flex-col items-center text-white"
+    >
       <div
         className={`flex flex-wrap xl:w-[90%] w-full gap-5 justify-center ${
           window.innerWidth > 1087 ? "justify-between" : ""
@@ -45,9 +48,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <form method="POST" action="https://getform.io/f/panvnyza" className={`w-full md:w-[450px] ${
-          window.innerWidth > 1087 ? "mt-12" : "mb-2"
-        }  text-center md:text-left`}>
+        <form
+          method="POST"
+          action="https://getform.io/f/panvnyza"
+          className={`w-full md:w-[450px] ${
+            window.innerWidth > 1087 ? "mt-12" : "mb-2"
+          }  text-center md:text-left`}
+        >
           <div
             className={`w-full md:w-[450px] ${
               window.innerWidth > 1087 ? "" : "mb-2"
