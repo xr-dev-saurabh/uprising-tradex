@@ -10,7 +10,7 @@ const CardList = () => {
       iconClass: " fa-solid fa-pen-nib",
       title: "Industry Expertise",
       content:
-        "With years of experience in the ICT and FMCG sectors, we have a deep understanding of the industry's nuances, enabling us to provide tailored solutions that meet your specific needs.",
+        "With years of experienced in the ICT and FMCG sectors, we have a deep understanding of the industry's nuances, enabling us to provide tailored solutions that meet your specific needs.",
     },
     {
       accentColor: "#EC9E38",
