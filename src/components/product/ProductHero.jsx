@@ -7,17 +7,6 @@ export default function ProductHero() {
     e.target.playbackRate = 0.75;
   }
 
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-
-      // Delay the URL update to allow smooth scroll to finish
-      setTimeout(() => {
-        window.history.replaceState(null, null, window.location.pathname);
-      }, 50); // Adjust the delay time as needed
-    }
-  };
 
   return (
     <div className="h-screen ">
@@ -41,7 +30,6 @@ export default function ProductHero() {
           </h1>
           <a
             href="#products"
-            onClick={(e) => scrollToSection("products", e)}
             className="group border px-3 py-2 mt-5 active:border-2  font-semibold tracking-wider scroll-smooth  text-white"
           >
             Order Now
