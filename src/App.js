@@ -20,7 +20,6 @@ export default function App() {
     <>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path="*" element={<Navigate to="/" />} />
           <Route
             path="/"
             element={
