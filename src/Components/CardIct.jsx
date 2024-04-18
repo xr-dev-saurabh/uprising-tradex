@@ -18,7 +18,7 @@ const CardIct = () => {
   }, []);
 
   return (
-    <div className="justify-center flex items-center md:mt-12 mt-8  w-full md:flex-row ">
+    <div id="Services" className="justify-center flex items-center md:mt-12 mt-8  w-full md:flex-row ">
       <div className="lg:w-[90%] flex flex-wrap justify-center gap-12 items-center md:p-5 mb-5 md:justify-evenly">
         {/* First Card (ICT Section) */}
         <div className="bg-white rounded-lg shadow-lg w-[90%] md:max-w-md md:p-8 p-4">
@@ -93,8 +93,8 @@ const CardIct = () => {
             quality.
           </p>
           <a
-            href="#Order"
-            target="_blank"
+            href="/order"
+           
             rel="noopener noreferrer"
           >
           <button className="mt-8 mx-auto md:mx-0 bg-sky-500 text-white px-4 py-2 rounded-md transition-colors duration-300 ease-in-out hover:bg-sky-300">

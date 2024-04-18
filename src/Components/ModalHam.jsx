@@ -8,31 +8,31 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-export const ModalHam = () => {
+export const ModalHam = ({ closeModal }) => {
   return (
     <div className="w-full h-screen">
       <div className="p-5 mt-6">
         <ul className="flex flex-col justify-center items-center  space-y-10 w-full">
-        <a href="#home" target="_blank" rel="noopener noreferrer">
-          <li className="w-[190px] gap-2 text-[20px] text-white font-bold flex justify-center hover:text-gray-500">
+        <a href="/"  rel="noopener noreferrer">
+          <li onClick={closeModal} className="w-[190px] gap-2 text-[20px] text-white font-bold flex justify-center hover:text-gray-500">
             <IoMdHome size={26} className="" />
             Home
           </li>
           </a>
-          <a href="#about" target="_blank" rel="noopener noreferrer">
-          <li className="w-[190px] gap-2 text-[20px] text-white font-bold flex justify-center hover:text-gray-500">
+          <a href="/about"  rel="noopener noreferrer">
+          <li onClick={closeModal} className="w-[190px] gap-2 text-[20px] text-white font-bold flex justify-center hover:text-gray-500">
             <RiTeamFill size={26} className="" />
             About
           </li>
           </a>
-          <a href="#footer" target="_blank" rel="noopener noreferrer">
-          <li className="w-[190px] gap-2 text-[20px] text-white font-bold flex justify-center hover:text-gray-500">
+          <a href="#contact"  rel="noopener noreferrer">
+          <li onClick={closeModal} className="w-[190px] gap-2 text-[20px] text-white font-bold flex justify-center hover:text-gray-500">
           <MdPermContactCalendar size={28} className="" />
             Contact
           </li>
           </a>
-          <a href="#Order" target="_blank" rel="noopener noreferrer">
-          <li className="w-[190px] gap-2 ml-3  text-[20px] text-white font-bold flex justify-center hover:text-gray-500">
+          <a href="/order"  rel="noopener noreferrer">
+          <li onClick={closeModal} className="w-[190px] gap-2 ml-3  text-[20px] text-white font-bold flex justify-center hover:text-gray-500">
              <FaShoppingCart size={26} className="" />
             Order Now
           </li>

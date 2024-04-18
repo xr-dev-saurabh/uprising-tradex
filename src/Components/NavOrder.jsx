@@ -1,14 +1,12 @@
-// Navbar.js
-
 import React, { useState, useEffect } from "react";
 import { IoMdHome } from "react-icons/io";
 import { RiTeamFill } from "react-icons/ri";
 import { MdPermContactCalendar } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
-import { ModalHam } from "./ModalHam";    
+import { ModalHamOd } from "./ModalHamOd";
 import { FaWindowClose } from "react-icons/fa";
 
-const Navbar = () => {
+const NavOrder = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -49,13 +47,13 @@ const Navbar = () => {
   return (
     <nav className="bg-transparent w-full absolute top-0  py-6 ">
       <div className="mx-auto px-4 relative sm:px-6 lg:px-8 flex justify-center">
-        <div className=" md:w-[80%] w-[90%] flex items-center py-1 justify-between bg-[#110537] rounded-full text-white">
+        <div className=" md:w-[80%] w-[90%] flex items-center py-1 justify-between bg-white rounded-full text-black">
           <div className={`flex-shrink-0`}>
-          <a href="https://www.uprisingtradex.com" target="_blank" rel="noopener noreferrer">
-            <h1 style={{ fontFamily: '"Calistoga", serif' }} className="ml-5">
-              {" "}
-              Uprising Tradex
-            </h1>
+            <a href="/" rel="noopener noreferrer">
+              <h1 style={{ fontFamily: '"Calistoga", serif' }} className="ml-5">
+                {" "}
+                Uprising Tradex
+              </h1>
             </a>
           </div>
 
@@ -64,7 +62,7 @@ const Navbar = () => {
               <div>
                 <button
                   type="button"
-                  className="bg-[#110537] rounded-full items-center justify-center p-2"
+                  className="bg-white rounded-full items-center justify-center p-2"
                   onClick={openModal}
                 >
                   <svg
@@ -85,45 +83,48 @@ const Navbar = () => {
                 </button>
 
                 {modalOpen && (
-                  <div className="fixed w-full inset-0 items-center justify-center z-50 bg-[#110537] scroll-0">
+                  <div className="fixed w-full inset-0 items-center justify-center z-50 bg-white scroll-0">
                     <div className="p-4">
-                      <ModalHam closeModal={closeModal}/>
+                      <ModalHamOd closeModal={closeModal} />
                       <button
                         type="button"
                         className="absolute top-3 right-3 "
                         onClick={closeModal}
                       >
-                        <FaWindowClose size={35} color="#110537" fill="white"/>
+                        <FaWindowClose size={35} color="#110537" fill="black" />
                       </button>
                     </div>
                   </div>
                 )}
               </div>
             ) : (
-              <ul className="bg-[#110537] rounded-full text-white md:flex cursor-pointer">
-              <a href="/"  rel="noopener noreferrer">
-                <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                  <IoMdHome size={24} className="mr-2" />
-                  Home
-                </li>
+              <ul className="bg-white rounded-full text-black md:flex cursor-pointer">
+                <a href="/" rel="noopener noreferrer">
+                  <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                    <IoMdHome size={24} className="mr-2" />
+                    Home
+                  </li>
                 </a>
-                <a href="/about"  rel="noopener noreferrer">
-                <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                  <RiTeamFill size={22} className="mr-2" />
-                  About
-                </li>
+                <a href="/about" rel="noopener noreferrer">
+                  <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                    <RiTeamFill size={22} className="mr-2" />
+                    About
+                  </li>
                 </a>
-                <a href="#contact"  rel="noopener noreferrer">
-                <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                  <MdPermContactCalendar size={22} className="mr-2" />
-                  Contact
-                </li>
+                <a
+                  href="#contact"
+                  rel="noopener noreferrer"
+                >
+                  <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                    <MdPermContactCalendar size={22} className="mr-2" />
+                    Contact
+                  </li>
                 </a>
-                <a href="/order"  rel="noopener noreferrer">
-                <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                  <FaShoppingCart size={19} className="mr-2" />
-                  Order Now
-                </li>
+                <a href="/Order" rel="noopener noreferrer">
+                  <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                    <FaShoppingCart size={19} className="mr-2" />
+                    Order Now
+                  </li>
                 </a>
               </ul>
             )}
@@ -134,4 +135,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavOrder;

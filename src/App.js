@@ -12,32 +12,55 @@ import FirstSection from "./components/about/FirstSection";
 import SecondSection from "./components/about/SecondSection";
 import ThirdSection from "./components/about/ThirdSection";
 import ProductHero from "./components/product/ProductHero";
-import Card from "./components/product/Card";
 import ProductsRow from "./components/product/ProductsRow";
+import NavOrder from "./components/NavOrder";
 
 
 export default function App() {
   return (
     <>
-      <Suspense>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>  
-              <Hero />
-              <Navbar />
-              <CardIct />
-              <BigCard />
-              <Servies />
-              <Misson />
-              <WhyUs />
-              <Footer />
-              </>
-            }
-          />
-        </Routes>
-      </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Hero />
+            <Navbar />
+            <CardIct />
+            <BigCard />
+            <Servies />
+            <Misson />
+            <WhyUs />
+            <Footer />
+          </>
+        }
+      />
+      <Route
+        path="/about"
+        element={
+          <>
+            <FirstSection />
+            <Navbar />
+            <SecondSection />
+            <ThirdSection />
+            <Footer />
+          </>
+        }
+      />
+      <Route
+        path="/order"
+        element={
+          <>
+            <ProductHero />
+            <NavOrder />
+            <ProductsRow />
+            <Footer />
+          </>
+        }
+      />
+    </Routes>
+  </Suspense>
       </>
   )
 }

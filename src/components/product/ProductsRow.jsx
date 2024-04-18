@@ -11,13 +11,13 @@ import Commoditiies from '../../assets/chickpeas-250x250.jpg';
 
 export default function ProductsRow() {
     return (
-        <div className='p-5 md:w-[90%] justify-around mx-auto gap-10' >
+        <div id='products' className='p-5 md:w-[90%] justify-around mx-auto gap-10' >
         <div>
         <h1 className='text-3xl lg:text-5xl mb-5 mt-9 md:mb-10 text-center font-serif'>
         OUR PRODUCTS
         </h1>
         </div>
-        <div className=' flex flex-wrap justify-around mx-auto gap-10' id='products'>
+        <div className=' flex flex-wrap justify-around mx-auto gap-10' >
             <Card img={CashewNuts} title="Cashew Nuts" disc="Manufacturer of a wide range of products which include Cashew Kernels, Raw Cashew Nuts, Roasted Salted Flavored Cashew and Spicy Flavored Cashew" key={1} />
             <Card img={Namkeen} title="Namkeen" disc="We are a leading Manufacturer of Salted Namkeen, Masala Boondi Namkeen, Mix Namkeen, Bhujia Namkeen and Navratna Mix Namkeen from Surat, India" key={2} />
             <Card img={Sweets} title="Sweets" disc="Prominent & Leading Manufacturer from Surat, we offer Gulab Jamun, Sweet Rajbhog, Sweet Rasgulla, Soan Papdi and Rasmalai Bati." key={3} />

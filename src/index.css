@@ -11,6 +11,10 @@ body {
   background-color: #f8f9fb;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .footer_bottom h3 {
   font-family: "Open Sans", sans-serif;
 }
@@ -18,3 +22,5 @@ body {
 .icon-white {
   fill: white;
 }
+
+
