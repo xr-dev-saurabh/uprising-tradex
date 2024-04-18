@@ -5,6 +5,7 @@ import { MdPermContactCalendar } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
 import { ModalHamOd } from "./ModalHamOd";
 import { FaWindowClose } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 const NavOrder = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -43,6 +44,9 @@ const NavOrder = () => {
       body.style.overflow = "auto"; // Restore default overflow when component unmounts
     };
   }, [modalOpen]);
+
+  const { pathname } = useLocation();
+  console.log(pathname);
 
   return (
     <nav className="bg-transparent w-full absolute top-0  py-6 ">
@@ -111,10 +115,7 @@ const NavOrder = () => {
                     About
                   </li>
                 </a>
-                <a
-                  href="/order#contact"
-                  rel="noopener noreferrer"
-                >
+                <a href={`${pathname}#contact`} rel="noopener noreferrer">
                   <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
                     <MdPermContactCalendar size={22} className="mr-2" />
                     Contact

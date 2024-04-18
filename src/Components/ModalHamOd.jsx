@@ -7,9 +7,11 @@ import { FaFacebook } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { useLocation } from "react-router-dom";
 
 export const ModalHamOd = ({ closeModal }) => {
-
+  const { pathname } = useLocation();
+  console.log(pathname);
 
   return (
     <div className="w-full h-screen">
@@ -33,10 +35,7 @@ export const ModalHamOd = ({ closeModal }) => {
               About
             </li>
           </a>
-          <a
-            href="#contact"
-            rel="noopener noreferrer"
-          >
+          <a href={`${pathname}#contact`} rel="noopener noreferrer">
             <li
               onClick={closeModal}
               className="w-[190px] gap-2 text-[20px] text-black font-bold flex justify-center hover:text-gray-500"

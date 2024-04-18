@@ -54,11 +54,7 @@ const Navbar = () => {
       <div className="mx-auto px-4 relative sm:px-6 lg:px-8 flex justify-center">
         <div className=" md:w-[80%] w-[90%] flex items-center py-1 justify-between bg-[#110537] rounded-full text-white">
           <div className={`flex-shrink-0`}>
-            <a
-              href="https://www.uprisingtradex.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/" rel="noopener noreferrer">
               <h1 style={{ fontFamily: '"Calistoga", serif' }} className="ml-5">
                 {" "}
                 Uprising Tradex

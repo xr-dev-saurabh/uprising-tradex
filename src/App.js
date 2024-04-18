@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import BigCard from "./components/BigCard";
-import {Hero} from "./components/Hero";
+import { Hero } from "./components/Hero";
 import Misson from "./components/Misson";
 import Servies from "./components/Servies";
 import Navbar from "./components/Navbar";
@@ -15,56 +15,54 @@ import ProductHero from "./components/product/ProductHero";
 import ProductsRow from "./components/product/ProductsRow";
 import NavOrder from "./components/NavOrder";
 
-
 export default function App() {
   return (
     <>
-    <Suspense fallback={<div>Loading...</div>}>
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <Hero />
-            <Navbar />
-            <CardIct />
-            <BigCard />
-            <Servies />
-            <Misson />
-            <WhyUs />
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path="/about"
-        element={
-          <>
-            <FirstSection />
-            <Navbar />
-            <SecondSection />
-            <ThirdSection />
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path="/order"
-        element={
-          <>
-            <ProductHero />
-            <NavOrder />
-            <ProductsRow />
-            <Footer />
-          </>
-        }
-      />
-    </Routes>
-  </Suspense>
-      </>
-  )
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Navbar />
+                <CardIct />
+                <BigCard />
+                <Servies />
+                <Misson />
+                <WhyUs />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <>
+                <FirstSection />
+                <Navbar />
+                <SecondSection />
+                <ThirdSection />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/order"
+            element={
+              <>
+                <ProductHero />
+                <NavOrder />
+                <ProductsRow />
+                <Footer />
+              </>
+            }
+          />
+        </Routes>
+      </Suspense>
+    </>
+  );
 }
-
 
 //Steps for route
 //1. Landing Page has all the above components. Navbar has two components, Navbar and ModelHam, add link for route in both.
