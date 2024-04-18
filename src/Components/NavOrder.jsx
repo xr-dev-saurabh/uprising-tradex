@@ -112,7 +112,7 @@ const NavOrder = () => {
                   </li>
                 </a>
                 <a
-                  href="#contact"
+                  href="/order#contact"
                   rel="noopener noreferrer"
                 >
                   <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">

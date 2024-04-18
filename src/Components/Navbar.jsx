@@ -5,8 +5,9 @@ import { IoMdHome } from "react-icons/io";
 import { RiTeamFill } from "react-icons/ri";
 import { MdPermContactCalendar } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
-import { ModalHam } from "./ModalHam";    
+import { ModalHam } from "./ModalHam";
 import { FaWindowClose } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -45,17 +46,23 @@ const Navbar = () => {
       body.style.overflow = "auto"; // Restore default overflow when component unmounts
     };
   }, [modalOpen]);
+  const { pathname } = useLocation();
+  console.log(pathname);
 
   return (
     <nav className="bg-transparent w-full absolute top-0  py-6 ">
       <div className="mx-auto px-4 relative sm:px-6 lg:px-8 flex justify-center">
         <div className=" md:w-[80%] w-[90%] flex items-center py-1 justify-between bg-[#110537] rounded-full text-white">
           <div className={`flex-shrink-0`}>
-          <a href="https://www.uprisingtradex.com" target="_blank" rel="noopener noreferrer">
-            <h1 style={{ fontFamily: '"Calistoga", serif' }} className="ml-5">
-              {" "}
-              Uprising Tradex
-            </h1>
+            <a
+              href="https://www.uprisingtradex.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h1 style={{ fontFamily: '"Calistoga", serif' }} className="ml-5">
+                {" "}
+                Uprising Tradex
+              </h1>
             </a>
           </div>
 
@@ -87,13 +94,13 @@ const Navbar = () => {
                 {modalOpen && (
                   <div className="fixed w-full inset-0 items-center justify-center z-50 bg-[#110537] scroll-0">
                     <div className="p-4">
-                      <ModalHam closeModal={closeModal}/>
+                      <ModalHam closeModal={closeModal} />
                       <button
                         type="button"
                         className="absolute top-3 right-3 "
                         onClick={closeModal}
                       >
-                        <FaWindowClose size={35} color="#110537" fill="white"/>
+                        <FaWindowClose size={35} color="#110537" fill="white" />
                       </button>
                     </div>
                   </div>
@@ -101,29 +108,29 @@ const Navbar = () => {
               </div>
             ) : (
               <ul className="bg-[#110537] rounded-full text-white md:flex cursor-pointer">
-              <a href="/"  rel="noopener noreferrer">
-                <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                  <IoMdHome size={24} className="mr-2" />
-                  Home
-                </li>
+                <a href="/" rel="noopener noreferrer">
+                  <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                    <IoMdHome size={24} className="mr-2" />
+                    Home
+                  </li>
                 </a>
-                <a href="/about"  rel="noopener noreferrer">
-                <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                  <RiTeamFill size={22} className="mr-2" />
-                  About
-                </li>
+                <a href="/about" rel="noopener noreferrer">
+                  <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                    <RiTeamFill size={22} className="mr-2" />
+                    About
+                  </li>
                 </a>
-                <a href="#contact"  rel="noopener noreferrer">
-                <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                  <MdPermContactCalendar size={22} className="mr-2" />
-                  Contact
-                </li>
+                <a href={`${pathname}#contact`} rel="noopener noreferrer">
+                  <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                    <MdPermContactCalendar size={22} className="mr-2" />
+                    Contact
+                  </li>
                 </a>
-                <a href="/order"  rel="noopener noreferrer">
-                <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                  <FaShoppingCart size={19} className="mr-2" />
-                  Order Now
-                </li>
+                <a href="/order" rel="noopener noreferrer">
+                  <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                    <FaShoppingCart size={19} className="mr-2" />
+                    Order Now
+                  </li>
                 </a>
               </ul>
             )}
