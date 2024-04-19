@@ -60,7 +60,6 @@ const NavOrder = () => {
   };
 
   const { pathname } = useLocation();
-  console.log(pathname);
 
   return (
     <nav className="bg-transparent w-full absolute top-0  py-6 ">

@@ -16,7 +16,6 @@ const Card = ({ img, title, disc }) => {
   };
 
   const { pathname } = useLocation();
-  console.log(pathname);
 
   return (
     <div className="md:flex flex-row border p-5 w-[500px] rounded-lg  gap-10 shadow-md">

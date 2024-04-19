@@ -24,7 +24,6 @@ export const ModalHam = ({ closeModal }) => {
   };
 
   const { pathname } = useLocation();
-  console.log(pathname);
 
   return (
     <div className="w-full h-screen">

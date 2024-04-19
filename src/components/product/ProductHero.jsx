@@ -21,7 +21,6 @@ export default function ProductHero() {
   };
 
   const { pathname } = useLocation();
-  console.log(pathname);
 
   return (
     <div className="h-screen ">

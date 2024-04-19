@@ -17,7 +17,6 @@ export function Hero() {
   };
 
   const { pathname } = useLocation();
-  console.log(pathname);
 
   return (
     <div className="h-screen w-full bg-[#f8f9fb] items-center  justify-center overflow-hidden">
