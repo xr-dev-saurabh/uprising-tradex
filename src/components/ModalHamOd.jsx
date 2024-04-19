@@ -7,8 +7,10 @@ import { FaFacebook } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { useLocation } from "react-router-dom";
 
 export const ModalHamOd = ({ closeModal }) => {
+  
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -20,6 +22,9 @@ export const ModalHamOd = ({ closeModal }) => {
       }, 50); // Adjust the delay time as needed
     }
   };
+  
+  const { pathname } = useLocation();
+  console.log(pathname);
 
   return (
     <div className="w-full h-screen">
@@ -44,8 +49,8 @@ export const ModalHamOd = ({ closeModal }) => {
             </li>
           </a>
           <a
-            href="#contact"
-            onClick={(e) => scrollToSection("contact", e)}
+          href={`${pathname}#contact`}
+          onClick={(e) => scrollToSection("contact", e)}
             rel="noopener noreferrer"
           >
             <li

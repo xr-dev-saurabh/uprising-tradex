@@ -7,6 +7,7 @@ import { MdPermContactCalendar } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
 import { ModalHamOd } from "./ModalHamOd";
 import { FaWindowClose } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 const NavOrder = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -57,6 +58,9 @@ const NavOrder = () => {
       }, 50); // Adjust the delay time as needed
     }
   };
+
+  const { pathname } = useLocation();
+  console.log(pathname);
 
   return (
     <nav className="bg-transparent w-full absolute top-0  py-6 ">
@@ -126,8 +130,8 @@ const NavOrder = () => {
                   </li>
                 </a>
                 <a
-                  href="#contact"
-                  onClick={(e) => scrollToSection("contact", e)}
+                href={`${pathname}#contact`}
+                onClick={(e) => scrollToSection("contact", e)}
                   rel="noopener noreferrer"
                 >
                   <li className="hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">

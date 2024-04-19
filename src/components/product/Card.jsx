@@ -1,6 +1,8 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const Card = ({ img, title, disc }) => {
+  
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -12,6 +14,9 @@ const Card = ({ img, title, disc }) => {
       }, 50); // Adjust the delay time as needed
     }
   };
+
+  const { pathname } = useLocation();
+  console.log(pathname);
 
   return (
     <div className="md:flex flex-row border p-5 w-[500px] rounded-lg  gap-10 shadow-md">
@@ -28,8 +33,8 @@ const Card = ({ img, title, disc }) => {
           <p>{disc}</p>
         </div>
         <a
-          href="#contact"
-          onClick={(e) => scrollToSection("contact", e)}
+        href={`${pathname}#contact`}
+        onClick={(e) => scrollToSection("contact", e)}
           rel="noopener noreferrer"
           className="bg-green-500 text-white px-2 py-1 text-[14px] md:px-3 md:py-2 rounded-lg self-end mt-4 uppercase hover:bg-green-400"
         >
