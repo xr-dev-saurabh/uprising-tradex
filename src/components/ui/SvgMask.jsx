@@ -19,12 +19,13 @@ export const SvgMask = ({
     throttle((e) => {
       const rect = containerRef.current.getBoundingClientRect();
       setMousePosition({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-    }, 10) // Adjust the throttle delay as needed for smoothness
+    }, 50) // Adjust the throttle delay as needed for smoothness
   ).current;
 
   useEffect(() => {
-    const currentRef = containerRef.current; // Store the current value of ref inside the effect
+    const currentRef = containerRef.current;
     currentRef.addEventListener("mousemove", throttledUpdateMousePosition);
+  
     return () => {
       if (currentRef) {
         currentRef.removeEventListener(
@@ -33,7 +34,8 @@ export const SvgMask = ({
         );
       }
     };
-  }, [throttledUpdateMousePosition]);
+  }, []); // Empty dependency array ensures the effect runs only once
+  
 
   let maskSize = isHovered ? revealSize : size;
 

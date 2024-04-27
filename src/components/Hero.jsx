@@ -3,18 +3,6 @@ import { MdPlayCircleOutline } from "react-icons/md";
 import { useLocation } from "react-router-dom";
 
 export function Hero() {
-  
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-
-      // Delay the URL update to allow smooth scroll to finish
-      setTimeout(() => {
-        window.history.replaceState(null, null, window.location.pathname);
-      }, 50); // Adjust the delay time as needed
-    }
-  };
 
   const { pathname } = useLocation();
 
@@ -36,7 +24,6 @@ export function Hero() {
             </div>
             <a
             href={`${pathname}#services`}
-            onClick={(e) => scrollToSection("services", e)}
               rel="noopener noreferrer"
             >
               <button className="group border text-gray-800 border-black px-1 py-2 mt-6 font-semibold tracking-wider  text-base md:text-[20px] bg-white flex items-center">
@@ -66,7 +53,6 @@ export function Hero() {
           </div>
           <a
           href={`${pathname}#services`}
-          onClick={(e) => scrollToSection("services", e)}
             rel="noopener noreferrer"
           >
             <button className="text-white border-white border px-1 py-2 mt-6 font-semibold tracking-wider mx-auto text-base md:text-[20px] bg-black flex items-center">
