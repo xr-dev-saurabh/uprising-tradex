@@ -3,6 +3,7 @@ import WhyUs from "../../assets/why-us.png";
 import WhyUsMobile from "../../assets/whyus-mobile.png";
 
 export default function ThirdSection() {
+
   return (
     <>
       <div className="justify-items-center py-4 flex justify-center bg-[#f8f9fb]">
